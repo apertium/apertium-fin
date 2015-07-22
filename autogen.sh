@@ -31,5 +31,5 @@ ACLOCAL_PATH="${ACLOCAL_PATH}:${PREFIX}/share/aclocal"
 export ACLOCAL_PATH
 
 
-# Pass on all args to configure
-autoreconf -fi && ./configure "$@"
+autoreconf -fi 
+echo You may configure apertium-fin now with: ./configure
