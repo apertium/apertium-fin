@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+
+  <mode name="fin-morph">
+    <pipeline>
+      <program name="hfst-proc -e -w">
+        <file name="fin.automorf.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="fin-gener">
+    <pipeline>
+      <program name="hfst-proc -g">
+        <file name="fin.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="fin-disam">
+    <pipeline>
+      <program name="hfst-proc -e -w">
+        <file name="fin.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="fin.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="fin-disam-debug">
+    <pipeline>
+      <program name="hfst-proc -e -w">
+        <file name="fin.automorf.hfst"/>
+      </program>
+      <program name="cg-conv -a -l" />
+      <program name="vislcg3 --trace -g">
+        <file name="apertium-fin.fin.rlx"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+</modes>
