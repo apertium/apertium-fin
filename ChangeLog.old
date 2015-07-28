@@ -1,0 +1,432 @@
+2015-06-29 05:12  Flammmie A Pirinen <flammie@iki.fi>
+
+	* apertium-fin.fin.lexc, apertium-fin.fin.twol: new fixes: symbols,
+	  some derivs
+
+2015-04-20 16:53  Flammmie A Pirinen <flammie@iki.fi>
+
+	* apertium-fin.fin.lexc: add archaics and nonstandards as tags
+	  
+	  this prevents generation on eng-fin
+
+2015-04-08 16:03  Flammmie A Pirinen <flammie@iki.fi>
+
+	* apertium-fin.fin.lexc: lemmas for punct loops
+
+2015-04-08 12:56  Flammmie A Pirinen <flammie@iki.fi>
+
+	* apertium-fin.fin.lexc, apertium-fin.pc.in: update lexc
+
+2015-02-18 18:49  Flammmie A Pirinen <flammie@iki.fi>
+
+	* INSTALL: missing file
+
+2015-01-23 18:47  inariksit
+
+	* texts/normalisation/irc-logs.10.colloquial.txt,
+	  texts/normalisation/irc-logs.11.book.txt,
+	  texts/normalisation/irc-logs.11.partial.txt,
+	  texts/normalisation/irc-logs.12.book.txt,
+	  texts/normalisation/irc-logs.12.partial.txt,
+	  texts/normalisation/irc-logs.13.book.txt,
+	  texts/normalisation/irc-logs.13.partial.txt,
+	  texts/normalisation/irc-logs.14.book.txt,
+	  texts/normalisation/irc-logs.14.colloquial.txt,
+	  texts/normalisation/irc-logs.14.partial.txt: small fixes
+
+2015-01-23 18:10  inariksit
+
+	* texts/normalisation/irc-logs.02.book.txt: toistaseksi ->
+	  toistaiseksi
+
+2015-01-23 17:55  thejonttu
+
+	* texts/normalisation/irc-logs.10.book.txt,
+	  texts/normalisation/irc-logs.10.colloquial.txt,
+	  texts/normalisation/irc-logs.10.partial.txt,
+	  texts/normalisation/irc-logs.11.book.txt,
+	  texts/normalisation/irc-logs.11.colloquial.txt,
+	  texts/normalisation/irc-logs.11.partial.txt,
+	  texts/normalisation/irc-logs.12.book.txt,
+	  texts/normalisation/irc-logs.12.colloquial.txt,
+	  texts/normalisation/irc-logs.12.partial.txt,
+	  texts/normalisation/irc-logs.13.book.txt,
+	  texts/normalisation/irc-logs.13.colloquial.txt,
+	  texts/normalisation/irc-logs.13.partial.txt,
+	  texts/normalisation/irc-logs.14.book.txt,
+	  texts/normalisation/irc-logs.14.colloquial.txt,
+	  texts/normalisation/irc-logs.14.partial.txt: Texts
+
+2015-01-23 16:25  inariksit
+
+	* texts/normalisation/irc-logs.02.book.txt,
+	  texts/normalisation/irc-logs.02.partial.txt: small fixes
+
+2015-01-23 15:19  inariksit
+
+	* texts/normalisation/irc-logs.07.colloquial.txt,
+	  texts/normalisation/irc-logs.07.partial.txt: small fixes
+
+2015-01-23 15:15  inariksit
+
+	* texts/normalisation/irc-logs.01.partial.txt: add two more missing
+	  #s
+
+2015-01-23 15:12  inariksit
+
+	* texts/normalisation/irc-logs.01.partial.txt: add missing #
+
+2015-01-20 18:08  inariksit
+
+	* texts/normalisation/irc-logs.05.book.txt,
+	  texts/normalisation/irc-logs.05.partial.txt,
+	  texts/normalisation/irc-logs.06.book.txt,
+	  texts/normalisation/irc-logs.06.partial.txt,
+	  texts/normalisation/irc-logs.07.book.txt,
+	  texts/normalisation/irc-logs.07.partial.txt,
+	  texts/normalisation/irc-logs.08.book.txt,
+	  texts/normalisation/irc-logs.08.partial.txt,
+	  texts/normalisation/irc-logs.09.book.txt,
+	  texts/normalisation/irc-logs.09.colloquial.txt,
+	  texts/normalisation/irc-logs.09.partial.txt: fixes in finnish
+	  normalisation files
+
+2015-01-20 18:06  inariksit
+
+	* texts/normalisation/irc-logs.04.book.txt,
+	  texts/normalisation/irc-logs.04.partial.txt: fixes in 4th set
+
+2015-01-20 18:06  inariksit
+
+	* texts/normalisation/irc-logs.03.book.txt,
+	  texts/normalisation/irc-logs.03.colloquial.txt,
+	  texts/normalisation/irc-logs.03.partial.txt: fixes in 3rd set
+
+2015-01-20 18:05  inariksit
+
+	* texts/normalisation/irc-logs.02.book.txt,
+	  texts/normalisation/irc-logs.02.partial.txt: fixes in 2nd set
+
+2015-01-20 18:04  inariksit
+
+	* texts/normalisation/irc-logs.01.book.txt,
+	  texts/normalisation/irc-logs.01.colloquial.txt,
+	  texts/normalisation/irc-logs.01.partial.txt: fixes in 1st set
+
+2015-01-15 21:52  Francis M. Tyers <ftyers@prompsit.com>
+
+	* texts/normalisation/irc-logs.01.book.txt,
+	  texts/normalisation/irc-logs.01.partial.txt: some fixes
+
+2015-01-15 02:05  inariksit
+
+	* texts/normalisation/irc-logs.08.book.txt: small fixes
+
+2015-01-11 18:42  thejonttu
+
+	* texts/normalisation/irc-logs.08.book.txt,
+	  texts/normalisation/irc-logs.08.colloquial.txt,
+	  texts/normalisation/irc-logs.08.partial.txt,
+	  texts/normalisation/irc-logs.09.book.txt,
+	  texts/normalisation/irc-logs.09.colloquial.txt,
+	  texts/normalisation/irc-logs.09.partial.txt: Two colloquial texts
+	  more
+
+2015-01-11 17:22  thejonttu
+
+	* texts/normalisation/irc-logs.07.book.txt,
+	  texts/normalisation/irc-logs.07.colloquial.txt,
+	  texts/normalisation/irc-logs.07.partial.txt: New colloquial text
+
+2015-01-11 16:28  thejonttu
+
+	* texts/normalisation/irc-logs.06.book.txt,
+	  texts/normalisation/irc-logs.06.partial.txt: Fixes, plus added #
+	  where should be a space
+
+2014-12-26 10:59  thejonttu
+
+	* texts/normalisation/irc-logs.06.book.txt,
+	  texts/normalisation/irc-logs.06.colloquial.txt,
+	  texts/normalisation/irc-logs.06.partial.txt: Added a new
+	  colloquial text
+
+2014-12-25 17:12  Flammmie A Pirinen <flammie@iki.fi>
+
+	* configure.ac: broken cg-comp test
+
+2014-12-24 20:52  inariksit
+
+	* texts/normalisation/irc-logs.04.book.txt,
+	  texts/normalisation/irc-logs.04.partial.txt: some fixes
+
+2014-12-24 20:44  Francis M. Tyers <ftyers@prompsit.com>
+
+	* texts/normalisation/irc-logs.05.partial.txt: fixes here
+
+2014-12-24 20:43  Francis M. Tyers <ftyers@prompsit.com>
+
+	* texts/normalisation/irc-logs.05.book.txt: some fixes
+
+2014-12-24 20:25  thejonttu
+
+	* texts/normalisation/irc-logs.05.book.txt,
+	  texts/normalisation/irc-logs.05.partial.txt: Added texts
+
+2014-12-23 19:59  thejonttu
+
+	* texts/normalisation/irc-logs.04.book.txt,
+	  texts/normalisation/irc-logs.04.partial.txt: Fixed few errors
+
+2014-12-23 19:36  thejonttu
+
+	* texts/normalisation/irc-logs.04.book.txt,
+	  texts/normalisation/irc-logs.04.partial.txt: Added more text
+
+2014-12-23 16:28  Francis M. Tyers <ftyers@prompsit.com>
+
+	* texts/normalisation/irc-logs.03.book.txt: fixes
+
+2014-12-23 16:26  Francis M. Tyers <ftyers@prompsit.com>
+
+	* texts/normalisation/irc-logs.03.book.txt,
+	  texts/normalisation/irc-logs.03.partial.txt: add two more texts
+	  \o/
+
+2014-12-14 14:01  Francis M. Tyers <ftyers@prompsit.com>
+
+	* texts/normalisation/irc-logs.02.book.txt: viimeviikolla -> viime
+	  viikolla; enskerralla -> ensi kerralla
+
+2014-12-14 12:57  Francis M. Tyers <ftyers@prompsit.com>
+
+	* texts/normalisation/irc-logs.02.book.txt,
+	  texts/normalisation/irc-logs.02.partial.txt,
+	  texts/normalisation/irc-logs.03.colloquial.txt,
+	  texts/normalisation/irc-logs.04.colloquial.txt,
+	  texts/normalisation/irc-logs.05.colloquial.txt: add work done...
+	  some errors need fixing
+
+2014-12-10 14:58  Flammmie A Pirinen <flammie@iki.fi>
+
+	* dev/colloquial2normal.sed: normalisation
+
+2014-12-10 13:53  Francis M. Tyers <ftyers@prompsit.com>
+
+	* texts/normalisation/irc-logs.01.book.txt,
+	  texts/normalisation/irc-logs.01.partial.txt: some fixes
+
+2014-12-10 13:52  Francis M. Tyers <ftyers@prompsit.com>
+
+	* texts/normalisation, texts/normalisation/irc-logs.01.book.txt,
+	  texts/normalisation/irc-logs.01.colloquial.txt,
+	  texts/normalisation/irc-logs.01.partial.txt,
+	  texts/normalisation/irc-logs.02.colloquial.txt: add start of
+	  corpus
+
+2014-10-15 13:21  Francis M. Tyers <ftyers@prompsit.com>
+
+	* apertium-fin.fin.lexc: symbols for punctuation!
+
+2014-10-12 20:15  jezral
+
+	* INSTALL: Fix empty AUTHORS with svn log; Remove autotools files
+
+2014-10-09 15:28  Francis M. Tyers <ftyers@prompsit.com>
+
+	* modes.xml: enable proper compounds
+
+2014-10-08 19:58  Francis M. Tyers <ftyers@prompsit.com>
+
+	* apertium-fin.fin.lexc: add a multiwrod
+
+2014-10-03 15:18  Flammmie A Pirinen <flammie@iki.fi>
+
+	* apertium-fin.fin.lexc: Oops apertium does not have support for
+	  spaces yet
+
+2014-10-02 17:32  Flammmie A Pirinen <flammie@iki.fi>
+
+	* apertium-fin.fin.lexc: np and verb classes
+
+2014-09-25 01:21  Flammmie A Pirinen <flammie@iki.fi>
+
+	* Makefile.am, apertium-fin.fin.reweight: add weights
+
+2014-09-22 16:36  Francis M. Tyers <ftyers@prompsit.com>
+
+	* apertium-fin.fin.lexc: oppdatere... no skulle fungere 'ole'
+
+2014-09-21 23:19  Francis M. Tyers <ftyers@prompsit.com>
+
+	* apertium-fin.fin.lexc: we can live without 'ja' as an adverb ...
+	  fin-eng will not translate annoying speakers, but that is
+	  probably ok
+
+2014-09-21 23:09  Francis M. Tyers <ftyers@prompsit.com>
+
+	* apertium-fin.fin.lexc: more particle death
+
+2014-09-21 22:38  Francis M. Tyers <ftyers@prompsit.com>
+
+	* apertium-fin.fin.lexc: more particle death
+
+2014-09-21 21:34  Francis M. Tyers <ftyers@prompsit.com>
+
+	* apertium-fin.fin.lexc: enää -> adv
+
+2014-09-16 15:09  Francis M. Tyers <ftyers@prompsit.com>
+
+	* apertium-fin.fin.lexc: spaces are spaces
+
+2014-09-16 14:21  unhammer
+
+	* Makefile.am: re-use att.gz for lt-comp commands in the
+	  non-WANT_TRUE_APERTIUM case
+
+2014-09-16 13:55  Flammmie A Pirinen <flammie@iki.fi>
+
+	* Makefile.am: Avoid using lt-comp until it gets fixed
+
+2014-09-15 23:05  Flammmie A Pirinen <flammie@iki.fi>
+
+	* apertium-fin.fin.lexc: Fix some conversions
+
+2014-09-12 15:23  Francis M. Tyers <ftyers@prompsit.com>
+
+	* Makefile.am, apertium-fin.fin.lexc: some fixes
+
+2014-09-11 16:59  Francis M. Tyers <ftyers@prompsit.com>
+
+	* apertium-fin.fin.twol, modes.xml, texts/tarina.fin.txt: twol file
+
+2014-09-11 16:54  Francis M. Tyers <ftyers@prompsit.com>
+
+	* apertium-fin.fin.lexc: fin lexcs
+
+2014-09-02 08:47  unhammer
+
+	* .: various makefile cleanups (hbs install bin's, no need to
+	  compile for each pair)
+
+2014-08-21 15:44  Flammmie A Pirinen <flammie@iki.fi>
+
+	* texts, texts/tarina.fin.txt: Fixed version of story actually
+
+2014-08-03 22:40  Flammmie A Pirinen <flammie@iki.fi>
+
+	* configure.ac: Enable HFST by default until ltcomp can handle fin
+
+2014-07-15 13:01  unhammer
+
+	* Makefile.am: use $(CGCOMP) as dep for rlx goals so theyre
+	  recompiled on new versions
+
+2014-06-30 15:41  Flammmie A Pirinen <flammie@iki.fi>
+
+	* INSTALL, apertium-fin.fin.lexc: +ko fix
+
+2014-06-30 12:21  Flammmie A Pirinen <flammie@iki.fi>
+
+	* apertium-fin.fin.lexc: +miren
+
+2014-06-09 18:37  unhammer
+
+	* Makefile.am, autogen.sh: Put .pc and compiled data in /share/,
+	  not /lib/ (following Debian/autotools standards)
+	  
+	  pkgconfigdir=$(libdir)/pkgconfig →
+	  pkgconfigdir=$(prefix)/share/pkgconfig AP_LIB → AP_SRC
+	  apertium_XXXdir=$(prefix)/lib/apertium/$(BASENAME)/ →
+	  apertium_XXXdir=$(prefix)/share/apertium/$(BASENAME)/
+	  
+	  put share/pkgconfig in PKG_CONFIG_PATH in autogen.sh
+
+2014-06-05 07:54  inariksit
+
+	* INSTALL: stuff
+
+2014-06-02 17:30  Francis M. Tyers <ftyers@prompsit.com>
+
+	* apertium-fin.fin.acx: update
+
+2014-04-08 15:14  unhammer
+
+	* INSTALL, Makefile.am, configure.ac: require 3.3.0 since it uses
+	  3.3.0 features; use AP_MKINCLUDE for shorter makefiles
+
+2014-03-26 07:57  unhammer
+
+	* autogen.sh: fix autogen.sh so users don't have to set
+	  PKG_CONFIG_PATH and similar *PATH's
+
+2014-03-21 19:29  unhammer
+
+	* autogen.sh: run configure
+
+2014-03-02 02:12  Francis M. Tyers <ftyers@prompsit.com>
+
+	* Makefile.am, apertium-fin.fin.lexc: update
+
+2014-03-01 21:33  Flammmie A Pirinen <flammie@iki.fi>
+
+	* apertium-fin.fin.lexc: Change reflux tag to ref
+
+2014-03-01 18:36  Flammmie A Pirinen <flammie@iki.fi>
+
+	* apertium-fin.fin.lexc: Syntax updates for hfst-lexc parser
+
+2014-03-01 18:34  Francis M. Tyers <ftyers@prompsit.com>
+
+	* Makefile.am: upatte makefile
+
+2014-01-28 02:02  Flammmie A Pirinen <flammie@iki.fi>
+
+	* apertium-fin.fin.lexc: Remove few unlikely horrible ambiguities
+	  from finnwordnet etc.
+
+2013-11-30 16:26  Francis M. Tyers <ftyers@prompsit.com>
+
+	* INSTALL, modes.xml: update modes file
+
+2013-11-27 21:26  trondtr
+
+	* apertium-fin.fin.rlx: dis file copied from giellatekno's
+	  repository, oritginally written by Fred Karlsson.
+
+2013-11-27 21:25  trondtr
+
+	* dev, dev/cg-tag-convertor.py: Added filter to convert the .rlx
+	  file.
+
+2013-11-27 21:25  trondtr
+
+	* apertium-fin.fin.acx: Dummy file, the makefile wanted an acx
+	  file, and I added one normalising ä and a ¨ .
+
+2013-11-27 19:55  trondtr
+
+	* .: Moved the apertium-fin folder to the languages catalogue, in
+	  line with the present policy.
+
+2013-11-26 22:59  Flammmie A Pirinen <flammie@iki.fi>
+
+	* remove boundary markers from the file since no twol
+
+2013-11-14 14:26  Flammmie A Pirinen <flammie@iki.fi>
+
+	* Something rather strange
+
+2013-11-14 14:23  Flammmie A Pirinen <flammie@iki.fi>
+
+	* The standard structure and stuff, config switch for apertium
+	  monodix ver sus lexc's on HFST
+
+2013-11-11 14:18  Flammmie A Pirinen <flammie@iki.fi>
+
+	* add lexc version until dix supports all cool stuff
+
+2013-08-30 16:14  Flammmie A Pirinen <flammie@iki.fi>
+
+	* Finnish monodix semi-autogenerated from omorfi
+
