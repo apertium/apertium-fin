@@ -109,3 +109,6 @@ CLEANFILES = $(TARGETS_COMMON)
 clean-local:
 	-rm -rf .deps modes
 
+## Tests
+
+TESTS=coverages.bash
