@@ -76,9 +76,7 @@ endif
 $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx $(CGCOMP)
 	$(CGCOMP) $< $@
 
-###############################################################################
 ## Distribution
-###############################################################################
 
 EXTRA_DIST=$(BASENAME).$(LANG1).dix \
 	   $(BASENAME).post-$(LANG1).dix \
@@ -88,9 +86,7 @@ EXTRA_DIST=$(BASENAME).$(LANG1).dix \
 	   spellrelax.xsl \
 	   modes.xml
 
-###############################################################################
 ## Installation
-###############################################################################
 
 apertium_findir=$(prefix)/share/apertium/$(BASENAME)/
 apertium_fin_srcdir=$(prefix)/share/apertium/$(BASENAME)/
@@ -107,9 +103,7 @@ install-data-local:
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).dix $(DESTDIR)$(apertium_fin_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_fin_srcdir)
 
-###############################################################################
 ## Cleanup
-###############################################################################
 
 CLEANFILES = $(TARGETS_COMMON)
 clean-local:
