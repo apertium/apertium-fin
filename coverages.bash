@@ -3,7 +3,7 @@
 
 cat texts/* |\
     apertium -d . fin-morph |\
-    egrep '\*[^$]*' -o foo |\
+    egrep '\*[^$]*' -o |\
     sort |\
     uniq -c |\
     sort -nr > misses.freqs
