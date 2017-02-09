@@ -37,14 +37,17 @@ $(LANG1).automorf.att.gz: $(LANG1).automorf.bin
 
 else
 
-.deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol .deps/.d
-	hfst-twolc $< -o $@
+.deps/$(LANG1).gen.twol.hfst: $(BASENAME).$(LANG1).gen.twol .deps/.d
+	hfst-twolc --resolve $< -o $@
+
+.deps/$(LANG1).morf.twol.hfst: $(BASENAME).$(LANG1).morf.twol .deps/.d
+	hfst-twolc --resolve $< -o $@
 
 .deps/$(LANG1).lexc.hfst: $(BASENAME).$(LANG1).lexc .deps/.d
 	hfst-lexc $< -o $@
 
-$(LANG1).autogen.hfst: .deps/$(LANG1).twol.hfst .deps/$(LANG1).lexc.hfst $(BASENAME).$(LANG1).reweight
-	hfst-compose-intersect -1 .deps/$(LANG1).lexc.hfst -2 .deps/$(LANG1).twol.hfst |\
+$(LANG1).autogen.hfst: .deps/$(LANG1).gen.twol.hfst .deps/$(LANG1).lexc.hfst $(BASENAME).$(LANG1).reweight
+	hfst-compose-intersect -1 .deps/$(LANG1).lexc.hfst -2 .deps/$(LANG1).gen.twol.hfst |\
 		hfst-reweight -T $(BASENAME).$(LANG1).reweight |\
 		hfst-fst2fst -f olw -o $@
 
@@ -57,8 +60,8 @@ $(LANG1).autogen.bin: $(LANG1).autogen.att.gz
 	lt-comp rl $(LANG1).autogen.att $@
 	rm $(LANG1).autogen.att
 
-$(LANG1).automorf.hfst: $(LANG1).autogen.hfst .deps/.d
-	hfst-compose-intersect -1 .deps/$(LANG1).lexc.hfst -2 .deps/$(LANG1).twol.hfst |\
+$(LANG1).automorf.hfst: .deps/$(LANG1).morf.twol.hfst .deps/$(LANG1).lexc.hfst $(BASENAME).$(LANG1).reweight
+	hfst-compose-intersect -1 .deps/$(LANG1).lexc.hfst -2 .deps/$(LANG1).morf.twol.hfst |\
 		hfst-invert |\
 		hfst-reweight -T $(BASENAME).$(LANG1).reweight |\
 		hfst-fst2fst -f olw -o $@
