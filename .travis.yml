@@ -11,6 +11,7 @@ notifications:
     irc:
         channels:
             - "chat.freenode.net#omorfi"
+            - "chat.freenode.net#apertium"
         on_failure: always
         on_success: always
 
