@@ -1,0 +1,16 @@
+dist: trusty
+before_install:
+    - wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
+    - sudo apt-get install hfst apertium-all
+script:
+    - ./autogen.sh
+    - ./configure
+    - make
+    - make check
+notifications:
+    irc:
+        channels:
+            - "chat.freenode.net#omorfi"
+        on_failure: always
+        on_success: always
+
