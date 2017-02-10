@@ -11,4 +11,5 @@ notifications:
     irc:
         channels:
             - "chat.freenode.net#omorfi"
+            - "chat.freenode.net#apertium"
 
