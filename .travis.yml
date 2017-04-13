@@ -1,7 +1,7 @@
 dist: trusty
 before_install:
     - wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
-    - sudo apt-get install hfst apertium lttoolbox apertium-dev lttoolbox-dev libhfst48-dev cg3
+    - sudo apt-get install hfst apertium lttoolbox apertium-dev lttoolbox-dev libhfst49-dev cg3
 script:
     - ./autogen.sh
     - ./configure
@@ -12,6 +12,6 @@ notifications:
         channels:
             - "chat.freenode.net#omorfi"
             - "chat.freenode.net#apertium"
-    on_failure: always
-    on_success: never
+        on_failure: change
+        on_success: never
 
