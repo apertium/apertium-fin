@@ -710,19 +710,19 @@ SECTION
 
 # looks like = is just ADD.
 
-ADD:comma-clb (CLB) COMMA IF (0 PUNCT) (NOT 0 CLB) ;
-ADD:conj-clb1 (CLB) C IF (1 VFIN) (NOT 0 CLB) ;
-ADD:conj-clb2 (CLB) C IF (2 VFIN) (NOT 0 CLB) ;
-ADD:conj-clb3 (CLB) C IF (3 VFIN) (NOT 0 CLB) ;
+#ADD:comma-clb (CLB) COMMA IF (0 PUNCT) (NOT 0 CLB) ;
+#ADD:conj-clb1 (CLB) C IF (1 VFIN) (NOT 0 CLB) ;
+#ADD:conj-clb2 (CLB) C IF (2 VFIN) (NOT 0 CLB) ;
+#ADD:conj-clb3 (CLB) C IF (3 VFIN) (NOT 0 CLB) ;
 
 ### #(@w =**CLB (C) (NOT 1 DUMMY)
 # do not understand this one - Ryan
 
-ADD:compl-clb (CLB) COMPL IF (NOT 1 DUMMY) (NOT 0 CLB) ;
-ADD:rel-clb (CLB) REL IF (NOT 1 DUMMY) (NOT 0 CLB) ;
-ADD:qst-clb (CLB) KO IF (NOT 1 DUMMY) (NOT 0 CLB) ;
-ADD:adv-clb (CLB) ADV IF (0 KUINKA-MITEN-MILLOIN) (NOT 0 CLB) ;
-ADD:conj-clb4 (CLB) CONJ IF (NOT 0 CC) (NOT 0 CLB) ;
+#ADD:compl-clb (CLB) COMPL IF (NOT 1 DUMMY) (NOT 0 CLB) ;
+#ADD:rel-clb (CLB) REL IF (NOT 1 DUMMY) (NOT 0 CLB) ;
+#ADD:qst-clb (CLB) KO IF (NOT 1 DUMMY) (NOT 0 CLB) ;
+#ADD:adv-clb (CLB) ADV IF (0 KUINKA-MITEN-MILLOIN) (NOT 0 CLB) ;
+#ADD:conj-clb4 (CLB) CONJ IF (NOT 0 CC) (NOT 0 CLB) ;
 
 # Including (NOT 0 (CLB)) because it adds multiple times otherwise - Ryan
 
@@ -781,6 +781,7 @@ IFF PRON + INS (1C INS) ;
 # ------------------------------------------------------------
 # ======================================================================
 # WORD-FORM SPECIFIC:
+"<vai>" REMOVE:vai-n N ;
 
 "<ajan>" SELECT N (-1 GEN) ;
 "<ajan>" SELECT N (-1 KOKO) ;
