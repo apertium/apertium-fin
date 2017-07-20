@@ -11,15 +11,15 @@ TARGETS_COMMON=$(LANG1).automorf.att.gz $(LANG1).autogen.att.gz \
 
 
 
-if !WANT_TRUE_APERTIUM
+if WANT_LEXC
 TARGETS_COMMON+=$(LANG1).automorf.hfst $(LANG1).autogen.hfst
-else
+endif
+if WANT_LTPROC
 TARGETS_COMMON+=$(LANG1).automorf.bin $(LANG1).autogen.bin
 endif
 
 
 
-if WANT_TRUE_APERTIUM
 $(LANG1).autogen.bin: $(BASENAME).$(LANG1).dix .deps/.d
 	apertium-validate-dictionary $<
 	lt-comp rl $< $@ $(BASENAME).$(LANG1).acx
@@ -33,9 +33,6 @@ $(LANG1).autogen.att.gz: $(LANG1).autogen.bin
 
 $(LANG1).automorf.att.gz: $(LANG1).automorf.bin
 	lt-print $< | gzip -9 -c > $@
-
-
-else
 
 .deps/$(LANG1).gen.twol.hfst: $(BASENAME).$(LANG1).gen.twol .deps/.d
 	hfst-twolc --resolve $< -o $@
@@ -51,30 +48,11 @@ $(LANG1).autogen.hfst: .deps/$(LANG1).gen.twol.hfst .deps/$(LANG1).lexc.hfst $(B
 		hfst-reweight -T $(BASENAME).$(LANG1).reweight |\
 		hfst-fst2fst -f olw -o $@
 
-$(LANG1).autogen.att.gz: $(LANG1).autogen.hfst
-	hfst-fst2txt $< -o $(LANG1).autogen.att
-	gzip -f -9 $(LANG1).autogen.att
-
-$(LANG1).autogen.bin: $(LANG1).autogen.att.gz
-	zcat $< > $(LANG1).autogen.att
-	lt-comp rl $(LANG1).autogen.att $@
-	rm $(LANG1).autogen.att
-
 $(LANG1).automorf.hfst: .deps/$(LANG1).morf.twol.hfst .deps/$(LANG1).lexc.hfst $(BASENAME).$(LANG1).reweight
 	hfst-compose-intersect -1 .deps/$(LANG1).lexc.hfst -2 .deps/$(LANG1).morf.twol.hfst |\
 		hfst-invert |\
 		hfst-reweight -T $(BASENAME).$(LANG1).reweight |\
 		hfst-fst2fst -f olw -o $@
-
-$(LANG1).automorf.att.gz: $(LANG1).automorf.hfst
-	hfst-fst2txt $< -o $(LANG1).automorf.att
-	gzip -f -9 $(LANG1).automorf.att
-
-$(LANG1).automorf.bin: $(LANG1).automorf.att.gz
-	zcat $< > $(LANG1).automorf.att
-	lt-comp rl $(LANG1).automorf.att $@
-	rm $(LANG1).automorf.att
-endif
 
 $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx $(CGCOMP)
 	$(CGCOMP) $< $@
