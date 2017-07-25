@@ -6,8 +6,7 @@ BASENAME=apertium-$(LANG1)
 # This include defines goals for install-modes, .deps/.d and .mode files:
 @ap_include@
 
-TARGETS_COMMON=$(LANG1).automorf.att.gz $(LANG1).autogen.att.gz \
-        $(LANG1).rlx.bin
+TARGETS_COMMON=$(LANG1).rlx.bin
 
 
 
@@ -27,12 +26,6 @@ $(LANG1).autogen.bin: $(BASENAME).$(LANG1).dix .deps/.d
 $(LANG1).automorf.bin: $(BASENAME).$(LANG1).dix .deps/.d
 	apertium-validate-dictionary $<
 	lt-comp lr $< $@ $(BASENAME).$(LANG1).acx
-
-$(LANG1).autogen.att.gz: $(LANG1).autogen.bin
-	lt-print $< | gzip -9 -c > $@
-
-$(LANG1).automorf.att.gz: $(LANG1).automorf.bin
-	lt-print $< | gzip -9 -c > $@
 
 .deps/$(LANG1).gen.twol.hfst: $(BASENAME).$(LANG1).gen.twol .deps/.d
 	hfst-twolc --resolve $< -o $@

@@ -15,7 +15,7 @@ AC_ARG_ENABLE([lexc],
               [AS_HELP_STRING([--enable-lexc],
                               [use HFST to compile XEROX versions of stuffs @<:@default=yes@:>@])],
               [enable_lexc=$enableval], [enable_lexc=yes])
-AM_CONDITIONAL([WANT_LEXC], [test x$enable_ltproc != xno])
+AM_CONDITIONAL([WANT_LEXC], [test x$enable_lexc != xno])
 AC_ARG_ENABLE([ltproc],
               [AS_HELP_STRING([--enable-ltproc],
                               [use apertium to compile real apertium version @<:@default=no@:>@])],
