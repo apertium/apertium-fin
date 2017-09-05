@@ -34,7 +34,7 @@ $(LANG1).automorf.bin: $(BASENAME).$(LANG1).dix .deps/.d
 	hfst-twolc --resolve $< -o $@
 
 .deps/$(LANG1).lexc.hfst: $(BASENAME).$(LANG1).lexc .deps/.d
-	hfst-lexc $< -o $@
+	hfst-lexc $< -o $@ --alignStrings
 
 $(LANG1).autogen.hfst: .deps/$(LANG1).gen.twol.hfst .deps/$(LANG1).lexc.hfst $(BASENAME).$(LANG1).reweight
 	hfst-compose-intersect -1 .deps/$(LANG1).lexc.hfst -2 .deps/$(LANG1).gen.twol.hfst |\
@@ -70,7 +70,8 @@ apertium_fin_DATA=$(TARGETS_COMMON)
 pkgconfigdir = $(prefix)/share/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
 
-noinst_DATA=modes/$(LANG1)-morph.mode
+apertium_modesdir=$(prefix)/share/apertium/modes/
+apertium_modes_DATA=modes/$(LANG1)-morph.mode
 
 install-data-local:
 	test -d $(DESTDIR)$(apertium_fin_srcdir) || mkdir -p $(DESTDIR)$(apertium_fin_srcdir)
