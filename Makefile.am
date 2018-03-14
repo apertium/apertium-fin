@@ -1,5 +1,5 @@
-RELEASE=0.0
-VERSION=0.0.0
+## Process this file with automake to produce Makefile.in
+
 LANG1=fin
 BASENAME=apertium-$(LANG1)
 
@@ -17,7 +17,9 @@ if WANT_LTPROC
 TARGETS_COMMON+=$(LANG1).automorf.bin $(LANG1).autogen.bin
 endif
 
-
+.deps/.d:
+	$(MKDIR_P) .deps
+	touch $@
 
 $(LANG1).autogen.bin: $(BASENAME).$(LANG1).dix .deps/.d
 	apertium-validate-dictionary $<
@@ -38,13 +40,13 @@ $(LANG1).automorf.bin: $(BASENAME).$(LANG1).dix .deps/.d
 
 $(LANG1).autogen.hfst: .deps/$(LANG1).gen.twol.hfst .deps/$(LANG1).lexc.hfst $(BASENAME).$(LANG1).reweight
 	hfst-compose-intersect -1 .deps/$(LANG1).lexc.hfst -2 .deps/$(LANG1).gen.twol.hfst |\
-		hfst-reweight -T $(BASENAME).$(LANG1).reweight |\
+		hfst-reweight -T $(srcdir)/$(BASENAME).$(LANG1).reweight |\
 		hfst-fst2fst -f olw -o $@
 
 $(LANG1).automorf.hfst: .deps/$(LANG1).morf.twol.hfst .deps/$(LANG1).lexc.hfst $(BASENAME).$(LANG1).reweight
 	hfst-compose-intersect -1 .deps/$(LANG1).lexc.hfst -2 .deps/$(LANG1).morf.twol.hfst |\
 		hfst-invert |\
-		hfst-reweight -T $(BASENAME).$(LANG1).reweight |\
+		hfst-reweight -T $(srcdir)/$(BASENAME).$(LANG1).reweight |\
 		hfst-fst2fst -f olw -o $@
 
 $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx $(CGCOMP)
@@ -53,11 +55,12 @@ $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx $(CGCOMP)
 ## Distribution
 
 EXTRA_DIST=$(BASENAME).$(LANG1).dix \
-	   $(BASENAME).post-$(LANG1).dix \
 	   $(BASENAME).$(LANG1).acx \
 	   $(BASENAME).$(LANG1).rlx \
-	   $(LANG1).prob \
-	   spellrelax.xsl \
+	   $(BASENAME).$(LANG1).lexc \
+	   $(BASENAME).$(LANG1).reweight \
+	   $(BASENAME).$(LANG1).gen.twol $(BASENAME).$(LANG1).morf.twol \
+	   coverages.bash lookups.bash lookdowns.bash \
 	   modes.xml
 
 ## Installation
@@ -73,16 +76,19 @@ pkgconfig_DATA = $(BASENAME).pc
 apertium_modesdir=$(prefix)/share/apertium/modes/
 apertium_modes_DATA=modes/$(LANG1)-morph.mode
 
-install-data-local:
-	test -d $(DESTDIR)$(apertium_fin_srcdir) || mkdir -p $(DESTDIR)$(apertium_fin_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).dix $(DESTDIR)$(apertium_fin_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_fin_srcdir)
+modes/fin-morph.mode: modes.xml
+	cp -vf $< .
+	apertium-gen-modes modes.xml
+
 
 ## Cleanup
 
 CLEANFILES = $(TARGETS_COMMON)
 clean-local:
-	-rm -rf .deps modes
+	-rm -rf .deps modes *.mode misses.freqs
+	if test  x$(srcdir) != x$(builddir) ; then \
+		rm -f $(builddir)/modes.xml ;\
+	fi
 
 ## Tests
 
