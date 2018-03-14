@@ -1,7 +1,10 @@
-AC_PREREQ(2.52)
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
 
-AC_INIT([apertium-fin], [0.0.1], [flammie@iki.fi])
-AM_INIT_AUTOMAKE(no-define)
+AC_PREREQ(2.64)
+
+AC_INIT([apertium-fin], [0.0.1], [https://github.com/apertium/apertium-fin/issues],, [https://github.com/flammie/apertium-fin/])
+AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz no-define])
 AC_PROG_LN_S
 AC_PROG_AWK
 
@@ -45,7 +48,8 @@ AS_IF([test x$ac_cv_path_PKG_CONFIG = xno],
 
 AP_MKINCLUDE
 
-AC_OUTPUT([Makefile apertium-fin.pc])
+AC_CONFIG_FILES([Makefile apertium-fin.pc])
+AC_OUTPUT
 
 cat <<EOF
 Configured $PACKAGE_STRING
