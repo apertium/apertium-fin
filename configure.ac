@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT([apertium-fin], [20170720], [flammie@iki.fi])
+AC_INIT([apertium-fin], [0.0.1], [flammie@iki.fi])
 AM_INIT_AUTOMAKE(no-define)
 AC_PROG_LN_S
 AC_PROG_AWK
