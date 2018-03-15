@@ -77,7 +77,9 @@ apertium_modesdir=$(prefix)/share/apertium/modes/
 apertium_modes_DATA=modes/$(LANG1)-morph.mode
 
 modes/fin-morph.mode: modes.xml
-	cp -vf $< .
+	if test  x$(srcdir) != x$(builddir) ; then \
+		cp -v $< . ;\
+	fi
 	apertium-gen-modes modes.xml
 
 
