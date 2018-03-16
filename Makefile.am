@@ -69,6 +69,7 @@ apertium_findir=$(prefix)/share/apertium/$(BASENAME)/
 apertium_fin_srcdir=$(prefix)/share/apertium/$(BASENAME)/
 
 apertium_fin_DATA=$(TARGETS_COMMON)
+apertium_fin_src_DATA=$(BASENAME).$(LANG1).rlx $(BASENAME).$(LANG1).dix
 
 pkgconfigdir = $(prefix)/share/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
