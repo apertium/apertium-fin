@@ -1,0 +1,1 @@
+apertium-fin.fin.dix.html filter=lfs diff=lfs merge=lfs -text

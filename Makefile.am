@@ -89,8 +89,8 @@ clean-local:
 TESTS=coverages.bash lookups.bash lookdowns.bash
 
 if CAN_SAXON
-$(BASENAME).$(LANG1).dix.html: $(BASENAME).$(LANG1).dix dix2html.xsl
-	$(SAXON) -s:$< dix2html.xsl lang=Finnish  > $@
+$(BASENAME).$(LANG1).dix.html: $(BASENAME).$(LANG1).dix monodix2html.xslt
+	$(SAXON) -s:$< monodix2html.xslt language=Finnish  > $@
 
 
 endif
