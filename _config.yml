@@ -9,7 +9,7 @@ subtitle: 'Finnish dictionary for rule-based machine translation'
 navigation: 1
 
 # URL to source code, used in _includes/footer.html
-codeurl: 'https://github.com/flammie/apertium-fin'
+codeurl: 'https://github.com/apertium/apertium-fin'
 
 
 # Keep as an empty string if served up at the root. If served up at a specific
