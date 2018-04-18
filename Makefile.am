@@ -11,7 +11,7 @@ TARGETS_COMMON=$(LANG1).rlx.bin
 
 
 if WANT_LEXC
-TARGETS_COMMON+=$(LANG1).automorf.hfst $(LANG1).autogen.hfst
+TARGETS_COMMON+=$(LANG1).automorf.hfst $(LANG1).autogen.hfst $(LANG1).autogen.att.gz $(LANG1).automorf.att.gz
 endif
 if WANT_LTPROC
 TARGETS_COMMON+=$(LANG1).automorf.bin $(LANG1).autogen.bin
@@ -28,6 +28,12 @@ $(LANG1).autogen.bin: $(BASENAME).$(LANG1).dix .deps/.d
 $(LANG1).automorf.bin: $(BASENAME).$(LANG1).dix .deps/.d
 	apertium-validate-dictionary $<
 	lt-comp lr $< $@ $(BASENAME).$(LANG1).acx
+
+$(LANG1).autogen.att.gz: $(LANG1).autogen.hfst
+	hfst-fst2txt $< | gzip -9 -c -n > $@
+
+$(LANG1).automorf.att.gz: $(LANG1).automorf.hfst
+	hfst-fst2txt $< | gzip -9 -c -n > $@
 
 .deps/$(LANG1).gen.twol.hfst: $(BASENAME).$(LANG1).gen.twol .deps/.d
 	hfst-twolc --resolve $< -o $@
