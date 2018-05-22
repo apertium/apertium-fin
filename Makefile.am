@@ -89,94 +89,101 @@ clean-local:
 TESTS=coverages.bash lookups.bash lookdowns.bash
 
 if CAN_SAXON
-$(BASENAME).$(LANG1).dix.html: $(BASENAME).$(LANG1).dix monodix2html.xslt
-	$(SAXON) -s:$< monodix2html.xslt language=Finnish  > $@
+# upstream d/l
+monodix2html.xslt:
+	wget https://raw.githubusercontent.com/flammie/apevis-xslt/$@
 
-$(BASENAME).$(LANG1).dix-a.html: $(BASENAME).$(LANG1).dix monodix2html.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=a  > $@
+monodix2html-split.xslt:
+	wget https://raw.githubusercontent.com/flammie/apevis-xslt/$@
+
+$(BASENAME).$(LANG1).dix.html: $(BASENAME).$(LANG1).dix monodix2html.xslt
+	$(SAXON) -s:$< monodix2html.xslt language=Finnish langcode=fin  > $@
+
+$(BASENAME).$(LANG1).dix-a.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=a  > $@
 
 $(BASENAME).$(LANG1).dix-b.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=b  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=b  > $@
 
 $(BASENAME).$(LANG1).dix-c.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=c  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=c  > $@
 
 $(BASENAME).$(LANG1).dix-d.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=d  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=d  > $@
 
 $(BASENAME).$(LANG1).dix-e.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=e  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=e  > $@
 
 $(BASENAME).$(LANG1).dix-f.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=f  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=f  > $@
 
 $(BASENAME).$(LANG1).dix-g.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=g  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=g  > $@
 
 $(BASENAME).$(LANG1).dix-h.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=h  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=h  > $@
 
 $(BASENAME).$(LANG1).dix-i.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=i  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=i  > $@
 
 $(BASENAME).$(LANG1).dix-j.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=j  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=j  > $@
 
 $(BASENAME).$(LANG1).dix-k.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=k  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=k  > $@
 
 $(BASENAME).$(LANG1).dix-l.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=l  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=l  > $@
 
 $(BASENAME).$(LANG1).dix-m.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=m  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=m  > $@
 
 $(BASENAME).$(LANG1).dix-n.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=n  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=n  > $@
 
 $(BASENAME).$(LANG1).dix-o.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=o  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=o  > $@
 
 $(BASENAME).$(LANG1).dix-p.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=p  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=p  > $@
 
 $(BASENAME).$(LANG1).dix-q.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=q  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=q  > $@
 
 $(BASENAME).$(LANG1).dix-r.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=r  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=r  > $@
 
 $(BASENAME).$(LANG1).dix-s.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=s  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=s  > $@
 
 $(BASENAME).$(LANG1).dix-t.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=t  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=t  > $@
 
 $(BASENAME).$(LANG1).dix-u.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=u  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=u  > $@
 
 $(BASENAME).$(LANG1).dix-v.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=v  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=v  > $@
 
 $(BASENAME).$(LANG1).dix-w.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=w  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=w  > $@
 
 $(BASENAME).$(LANG1).dix-x.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=x  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=x  > $@
 
 $(BASENAME).$(LANG1).dix-y.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=y  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=y  > $@
 
 $(BASENAME).$(LANG1).dix-z.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=z  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=z  > $@
 
 $(BASENAME).$(LANG1).dix-å.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=å  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=å  > $@
 
 $(BASENAME).$(LANG1).dix-ä.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=ä  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=ä  > $@
 
 $(BASENAME).$(LANG1).dix-ö.html: $(BASENAME).$(LANG1).dix monodix2html-split.xslt
-	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish letter=ö  > $@
+	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=ö  > $@
 
 endif
