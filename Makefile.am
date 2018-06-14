@@ -4,7 +4,6 @@ LANG1=fin
 BASENAME=apertium-$(LANG1)
 
 # This include defines goals for install-modes, .deps/.d and .mode files:
-@ap_include@
 
 TARGETS_COMMON=$(LANG1).rlx.bin
 

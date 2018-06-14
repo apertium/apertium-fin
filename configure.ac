@@ -46,8 +46,6 @@ AS_IF([test x$ac_cv_path_PKG_CONFIG = xno],
       [AC_MSG_ERROR([You do not have pkg-config installed.])])
 
 
-AP_MKINCLUDE
-
 AC_CONFIG_FILES([Makefile apertium-fin.pc])
 AC_OUTPUT
 
