@@ -3,7 +3,7 @@
 
 AC_PREREQ(2.64)
 
-AC_INIT([apertium-fin], [0.0.1], [https://github.com/apertium/apertium-fin/issues],, [https://github.com/flammie/apertium-fin/])
+AC_INIT([apertium-fin], [0.0.2], [https://github.com/apertium/apertium-fin/issues],, [https://github.com/apertium/apertium-fin/])
 AM_INIT_AUTOMAKE([1.12 -Wall -Wno-portability -Werror foreign dist-xz no-define])
 AC_PROG_LN_S
 AC_PROG_AWK
