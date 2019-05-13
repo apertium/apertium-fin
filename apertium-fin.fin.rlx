@@ -107,7 +107,7 @@ LIST BADEVIL_WORDS =
     ("kui" n) ("tai" n) ("vai" n) ("pai" n)
     ("par" n) ("tule" n) ("kuvi" n) ("kos" n)
     ("mon" n) ("lev" n) ("ka" n)
-    ("taka" n) ("edus" n)
+    ("taka" n) ("edus" n) ("jotta" n)
     ("he" ij) ;
 
 ## propns that overlap commoner words
@@ -132,30 +132,31 @@ LIST RARER-NP =
     ("Kello" np) ("Kuppi" np) ("Mutta" np) ("Yhtiö" np)
     ("Ka" np) ("Kutsu" np) ("Teos" np) ("Teema" np)
     ("Puute" np) ("Soi" np) ("Hakkuu" np) ("Tu" np)
-    ("Vä" np) ("Vähä" np) ("Karta" np) ("Silta" np) 
+    ("Vä" np) ("Vähä" np) ("Karta" np) ("Silta" np)
     ("Onni" np) ("Joki" np) ("Muuri" np) ("Vuo" np)
-    ("Vuoksi" np) ("Kiva" np) ("Miele" np) 
+    ("Vuoksi" np) ("Kiva" np) ("Miele" np)
     ("Maakunta" np) ("Pia" np) ("Per" np) ("Olle" np)
-    ("Johan" np) ("Aino" np) ("Halunen" np) ("Eni" np) 
+    ("Johan" np) ("Aino" np) ("Halunen" np) ("Eni" np)
     ("Seuranen" np) ;
 ## also some cases where a rare noun blocks commoner propn
 ## often languages, nationalities, tribes
-LIST RARER-NOUN = ("missouri" n) ("tai" n) ("vai" n) 
+LIST RARER-NOUN = ("missouri" n) ("tai" n) ("vai" n)
     ("muutti" n) ("kanna" n) ;
 ## adverbs that are rarer than adp or noun counterparts. also some
 ## questionable advs that should've been intjs
 LIST RARER-ADV =
-    ("kuin" adv) ("kun" adv) ("tai" adv) ("sen" adv) 
+    ("kuin" adv) ("kun" adv) ("tai" adv) ("sen" adv)
     ("viisi" adv) ("kuuluu" adv) ("koska" adv) ("pitkää" adv) ;
 ## verbs that shadow some noun forms etc.
 LIST RARER-VBLEX =
     ("juuria" vblex) ("eritä" vblex) ("niittää" vblex)
     ("nytkiä" vblex) ("siitä" vblex) ("siittää" vblex)
     ("suomia" vblex) ("suoria" vblex) ("taata" vblex)
-    ("vastoa" vblex) ("oieta" vblex) ("niistää" vblex) ;
+    ("vastoa" vblex) ("oieta" vblex) ("niistää" vblex)
+    ("vedottaa" vblex) ;
 ## adverbs that are much commoner than nominal counterparts
 LIST DEFAULT-ADV =
-    ("erikseen" adv) ("erilleen" adv) ("erillään" adv) 
+    ("erikseen" adv) ("erilleen" adv) ("erillään" adv)
     ("lainkaan" adv) ("läpeensä" adv) ("kaikkiaan" adv)
     ("kumminkaan" adv) ("kumminkin" adv) ("naimisiin" adv)
     ("naimisissa" adv) ("jäljelle" adv) ("kerrassaan" adv)
@@ -174,7 +175,7 @@ LIST ADV-LIKE-ADJ-INE =
 ## illatives np initial
 LIST ADV-LIKE-ADJ-ILL =
     ("suoraan" adv) ("yksiin" adv) ("myöhään" adv)
-    ("turhaan" adv) ("varmaan" adv) ("täyteen" adv) 
+    ("turhaan" adv) ("varmaan" adv) ("täyteen" adv)
     ("pitkään" adv) ("pystyyn" adv) ;
 LIST ADV-LIKE-ADJ-ALL =
     ("uudelleen" adv) ;
@@ -184,7 +185,7 @@ LIST ADV-LIKE-ADJ-ADE =
     ("syvällä" adv) ("samalla" adv) ("pitkällä" adv) ;
 LIST ADV-LIKE-ADJ-INS =
     ("myöhemmin" adv) ("nykyisin" adv) ("aiemmin" adv) ;
-LIST ADV-LIKE-ADJ-GEN = ("vähän" adv) ("paljon" adv) 
+LIST ADV-LIKE-ADJ-GEN = ("vähän" adv) ("paljon" adv)
     ("vähemmän" adv) ("enemmän" adv) ;
 ## translatives np final
 ## instructives ... maybe
@@ -194,12 +195,12 @@ LIST ADV-LIKE-NOUN-TRA =
 ## instructives ... maybe
 LIST ADV-LIKE-NOUN-INS =
     ("paikoin" adv) ("selin" adv) ("silloin" adv)
-    ("suinkin" adv) ("suinkaan" adv) ("tuskin" adv) 
+    ("suinkin" adv) ("suinkaan" adv) ("tuskin" adv)
     ("vihdoin" adv) ("puolin" adv) ("muutoin" adv) ;
 ## adessives
 LIST ADV-LIKE-NOUN-ADE =
     ("todella" adv) ("tavallaan" adv) ("mielellään" adv)
-    ("perillä" adv) ("suunnitteilla" adv) ("vireillä" adv) 
+    ("perillä" adv) ("suunnitteilla" adv) ("vireillä" adv)
     ("jäljellä" adv) ;
 LIST ADV-LIKE-NOUN-ALL =
     ("perille" adv) ("suunnilleen" adv) ;
@@ -213,14 +214,14 @@ LIST RARER-ADP =
     ("silloin" adp) ("vaikka" adp) ("aina" adp) ;
 ## Adpositions by their complement
 ## adpositions with partitive complement
-LIST ADPS-WITH-PAR = ("ylös" adp) ("päin" adp) ("vastaan" adp) 
-    ("ilman" adp) ("kautta" adp) ("huolimatta" adp) ("asti" adp) 
+LIST ADPS-WITH-PAR = ("ylös" adp) ("päin" adp) ("vastaan" adp)
+    ("ilman" adp) ("kautta" adp) ("huolimatta" adp) ("asti" adp)
     ("sitten" adp) ("ennen" adp) ;
 ## adositions with genitive complement
-LIST ADPS-WITH-GEN = ("takana" adp) ("mukaan" adp) ("vuoksi" adp) 
-    ("alla" adp) ("kanssa" adp) ("kautta" adp) ("puolesta" adp) 
-    ("läpi" adp) ("johdolla" adp) ("sisällä" adp) ("perusteella" adp) 
-    ("sijaan" adp) ("suhteen" adp) ("avulla" adp) ("jälkeen" adp) 
+LIST ADPS-WITH-GEN = ("takana" adp) ("mukaan" adp) ("vuoksi" adp)
+    ("alla" adp) ("kanssa" adp) ("kautta" adp) ("puolesta" adp)
+    ("läpi" adp) ("johdolla" adp) ("sisällä" adp) ("perusteella" adp)
+    ("sijaan" adp) ("suhteen" adp) ("avulla" adp) ("jälkeen" adp)
     ("myötä" adp) ;
 ## adpositions with illative complement
 LIST ADPS-WITH-ILL = ("nähden" adp) ;
@@ -228,10 +229,10 @@ LIST ADPS-WITH-ILL = ("nähden" adp) ;
 LIST ADPS-WITH-ELA = ("ulos" adp) ;
 ## Verbs with inf complements
 ## ... infa
-LIST VBLEXS-WITH-INFA = ("alkaa" vaux) ("haluta" vaux) ("tahtoa" vaux) 
+LIST VBLEXS-WITH-INFA = ("alkaa" vaux) ("haluta" vaux) ("tahtoa" vaux)
     ("saattaa" vaux) ("aikoa" vaux) ("pitää" vaux) ;
 ## ... inf maan
-LIST VBLEXS-WITH-INFMAAN = ("alkaa" vaux) ("päästä" vaux) ("ruveta" vaux) 
+LIST VBLEXS-WITH-INFMAAN = ("alkaa" vaux) ("päästä" vaux) ("ruveta" vaux)
     ("pystyä" vblex) ("joutua" vaux) ("tulla" vblex) ;
 ## nouns where plural is rare / theoretical / shadows more common stuff
 LIST NOUNS-RARELY-PLURAL = ("kota" n pl) ("ikä" n pl)
@@ -239,7 +240,7 @@ LIST NOUNS-RARELY-PLURAL = ("kota" n pl) ("ikä" n pl)
     ("noki" n pl) ("tau" n pl) ("show" n pl)
     ("häkä" n pl) ("kulku" n pl) ("koko" n pl) ;
 ## numerals that are used nouns too
-LIST NUM-MULTIPLIER = ("puoli" num) ("sata" num) ("miljoona" num) 
+LIST NUM-MULTIPLIER = ("puoli" num) ("sata" num) ("miljoona" num)
     ("pari" num) ;
 ## temporal adverbs that can be noun forms
 LIST TIME-ADV = ("maanantaina" adv) ("tiistaina" adv) ("keskiviikkona" adv)
@@ -335,7 +336,7 @@ LIST PERÄISIN-VBLEX = ("perätä" vblex cond p1 sg) ;
 ## sekin = {that one too, of cheque}
 LIST SEKIN-PRON = ("se" pron) ;
 LIST LUNASTAA-VBLEX = ("lunastaa" vblex) ;
-## 
+##
 LIST TUO-PRON = ("tuo" pron) ;
 LIST KAIKKI = ("kaikki" pron) ("kaikki" adj) ;
 ## vastaan {against}
@@ -350,7 +351,7 @@ LIST VAALEISSA-ADJ = ("vaalea" adj pl ine) ;
 LIST VAALEISTA-ADJ = ("vaalea" adj pl ela) ;
 LIST VAALEIHIN-ADJ = ("vaalea" adj pl ill) ;
 LIST VAALEillA-ADJ = ("vaalea" adj pl ade) ;
-## 
+##
 LIST OTTAA-VBLEX = ("ottaa" vblex) ;
 ##
 LIST KallIS-NOUN = ("kallis" n) ;
@@ -403,17 +404,17 @@ LIST NIIN-ADV = ("niin" adv) ;
 LIST ESIM = ("esim." n) ("esimerkiks" adv) ("esimerkki" n sg tra) ;
 ##
 LIST TAI-CCONJ = ("tai" cnjcoo) ;
-## 
+##
 LIST NÄKÖJÄÄN-ADV = ("näköjään" adv) ;
 ##
 LIST SIKSI-ADV = ("siksi" adv) ;
-## 
+##
 LIST SUOTTA-ADV = ("suotta" adv) ;
-## 
+##
 LIST SYNTYISIN-ADV = ("syntyisin" adv) ;
 ##
 LIST TAKAISIN-ADV = ("takaisin" adv) ;
-## 
+##
 LIST TOISTAMISEEN-ADV = ("toistamiseen" adv) ;
 ##
 LIST MINÄ-PRON = ("minä" pron) ;
@@ -462,7 +463,7 @@ LIST VOI-VAUX = ("voida" vaux p3 sg) ;
 ## ei = {no, not, none, negative aux, }
 LIST EI-INTJ = ("ei" ij) ;
 LIST EI-VAUX = ("ei" vaux) ;
-## tutlittava 
+## tutlittava
 LIST TUTKITTAVA-DRV-VA = ("tutkittaa" vblex) ;
 LIST TUTKITTAVA-NOUN = ("tutkittava" n) ;
 ## merkittävä
@@ -479,7 +480,7 @@ LIST PITÄÄ-PASS = ("pitää" vblex pasv) ;
 ## joissa = {in the rivers, which}
 LIST JOISSA-PRON = ("joka" pron pl) ;
 LIST JOISSA-NOUN = ("joki" n pl) ;
-## apu, avu 
+## apu, avu
 LIST AVU-NOUN = ("apu" n) ;
 LIST APU-NOUN = ("avu" n) ;
 # }}}
