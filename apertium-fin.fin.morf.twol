@@ -10,7 +10,7 @@ A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
 
 ! boundaries
 %{wB%}:0 %{WB%}:0 %{MB%}:0 %{XB%}:0 %{DB%}:0 %{STUB%}:0
-;
+         %{WB%}:%-;
 
 Sets
 Vowels = a e i o u y ä ö ;
