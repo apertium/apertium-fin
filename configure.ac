@@ -45,6 +45,9 @@ AS_IF([test x$ac_cv_path_PKG_CONFIG = x],
 AS_IF([test x$ac_cv_path_PKG_CONFIG = xno],
       [AC_MSG_ERROR([You do not have pkg-config installed.])])
 
+AC_PATH_PROGS([SAXON], [saxon9-transform], [false])
+AM_CONDITIONAL([CAN_SAXON], [test x$SAXON != xfalse])
+
 
 AC_CONFIG_FILES([Makefile apertium-fin.pc])
 AC_OUTPUT
