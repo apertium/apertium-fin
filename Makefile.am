@@ -202,3 +202,25 @@ docs/$(BASENAME).$(LANG1).dix-ö.html: $(BASENAME).$(LANG1).dix monodix2html-spl
 	$(SAXON) -s:$< monodix2html-split.xslt language=Finnish langcode=fin letter=ö  > $@
 
 endif
+
+docs/statistics.md: apertium-fin.fin.lexc
+	echo "# Apertium-fin statistics" > $@
+	echo >> $@
+	echo "## Alphabets" >> $@
+	echo >> $@
+	$(AWK) '/Multichar_Symbols/,/LEXICON/ {print;}' $< |\
+		egrep -v '^!.*' |\
+		egrep -v '^$$' |\
+		fgrep -v LEXICON |\
+		fgrep -v Multichar_Symbols |\
+		wc -l >> $@
+	echo " symbols for tags." >> $@
+	echo >> $@
+	echo "## Lexemes" >> $@
+	echo "Approximately " >> $@
+	awk '/^LEXICON ADJ/,/^LEXICON ADJ_/ {print;}' $< |\
+		egrep -v '^!.*' |\
+		egrep -v '^$$' |\
+		fgrep -v LEXICON |\
+		wc -l >> $@
+	echo " lexemes in there." >> $@
