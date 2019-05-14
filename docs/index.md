@@ -5,11 +5,6 @@ and some rules, primarily developed for rule-based machine translation, but
 can be useful to anyone needing mono-lingual resources for the language.
 The dictionaries and rulesets are provided in apertium's own XML format.
 
-## Documentation
-
-The up-to-date documentation is on these webpages. You should find
-list of all pages [on the left](#navigation).
-
 ### Basics
 
 Everyone should read at least the usage information from the README of the
