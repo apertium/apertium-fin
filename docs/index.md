@@ -1,8 +1,3 @@
----
-layout: default
-title: "Apertium-fin"
----
-
 # Apertium-fin–Finnish dictionary and RBMT resources
 
 Apertium-fin is a free and open source project containing lexical resources
