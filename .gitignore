@@ -12,3 +12,18 @@ Makefile.in
 /install-sh
 /missing
 /stamp-h1
+
+# stuff
+#
+Makefile
+.deps
+apertium-fin.pc
+config.log
+config.status
+fin.autogen.att.gz
+fin.autogen.hfst
+fin.automorf.att.gz
+fin.automorf.hfst
+fin.rlx.bin
+modes
+test-driver
