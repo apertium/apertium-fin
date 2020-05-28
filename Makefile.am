@@ -41,7 +41,7 @@ $(LANG1).automorf.att.gz: $(LANG1).automorf.hfst
 	hfst-twolc --resolve $< -o $@
 
 .deps/$(LANG1).lexc.hfst: $(BASENAME).$(LANG1).lexc .deps/.d
-	hfst-lexc $< -o $@ --alignStrings
+	hfst-lexc $< -o $@
 
 $(LANG1).autogen.hfst: .deps/$(LANG1).gen.twol.hfst .deps/$(LANG1).lexc.hfst $(BASENAME).$(LANG1).reweight
 	hfst-compose-intersect -1 .deps/$(LANG1).lexc.hfst -2 .deps/$(LANG1).gen.twol.hfst |\
