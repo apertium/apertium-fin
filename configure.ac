@@ -1,6 +1,3 @@
-#                                               -*- Autoconf -*-
-# Process this file with autoconf to produce a configure script.
-
 AC_PREREQ(2.64)
 
 AC_INIT([apertium-fin], [0.0.2], [https://github.com/apertium/apertium-fin/issues],, [https://github.com/apertium/apertium-fin/])
@@ -48,6 +45,7 @@ AS_IF([test x$ac_cv_path_PKG_CONFIG = xno],
 AC_PATH_PROGS([SAXON], [saxon9-transform], [false])
 AM_CONDITIONAL([CAN_SAXON], [test x$SAXON != xfalse])
 
+AP_MKINCLUDE
 
 AC_CONFIG_FILES([Makefile apertium-fin.pc])
 AC_OUTPUT

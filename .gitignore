@@ -1,6 +1,8 @@
 # http://www.gnu.org/software/automake
 
 Makefile.in
+INSTALL
+ap_include.am
 
 # http://www.gnu.org/software/autoconf
 

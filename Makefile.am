@@ -1,5 +1,3 @@
-## Process this file with automake to produce Makefile.in
-
 LANG1=fin
 BASENAME=apertium-$(LANG1)
 
@@ -7,7 +5,7 @@ BASENAME=apertium-$(LANG1)
 
 TARGETS_COMMON=$(LANG1).rlx.bin
 
-
+@ap_include@
 
 if WANT_LEXC
 TARGETS_COMMON+=$(LANG1).automorf.hfst $(LANG1).autogen.hfst $(LANG1).autogen.att.gz $(LANG1).automorf.att.gz
@@ -74,21 +72,14 @@ apertium_findir=$(prefix)/share/apertium/$(BASENAME)/
 apertium_fin_srcdir=$(prefix)/share/apertium/$(BASENAME)/
 
 apertium_fin_DATA=$(TARGETS_COMMON)
-apertium_fin_src_DATA=$(BASENAME).$(LANG1).rlx $(BASENAME).$(LANG1).dix
+apertium_fin_src_DATA=$(BASENAME).$(LANG1).rlx $(BASENAME).$(LANG1).dix $(LANG1).autogen.att.gz
 
 pkgconfigdir = $(prefix)/share/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
 
 apertium_modesdir=$(prefix)/share/apertium/modes/
-apertium_modes_DATA=modes/$(LANG1)-morph.mode
 
-modes/fin-morph.mode: modes.xml
-	if test  x$(srcdir) != x$(builddir) ; then \
-		cp -v $< . ;\
-	fi
-	apertium-gen-modes modes.xml
-	-mv -v *.mode modes/
-
+install-data-local: install-modes
 
 ## Cleanup
 
