@@ -41,8 +41,13 @@ $(LANG1).automorf.att.gz: $(LANG1).automorf.hfst
 .deps/$(LANG1).lexc.hfst: $(BASENAME).$(LANG1).lexc .deps/.d
 	hfst-lexc $< -o $@
 
-$(LANG1).autogen.hfst: .deps/$(LANG1).gen.twol.hfst .deps/$(LANG1).lexc.hfst $(BASENAME).$(LANG1).reweight
+.deps/$(LANG1).tag-relax.hfst: $(BASENAME).$(LANG1).tag-relax.regex .deps/.d
+	hfst-regexp2fst -S -i $< -o $@
+
+$(LANG1).autogen.hfst: .deps/$(LANG1).gen.twol.hfst .deps/$(LANG1).lexc.hfst \
+		.deps/$(LANG1).tag-relax.hfst $(BASENAME).$(LANG1).reweight 
 	hfst-compose-intersect -1 .deps/$(LANG1).lexc.hfst -2 .deps/$(LANG1).gen.twol.hfst |\
+		hfst-compose -1 .deps/$(LANG1).tag-relax.hfst - |\
 		hfst-reweight -T $(srcdir)/$(BASENAME).$(LANG1).reweight |\
 		hfst-fst2fst -f olw -o $@
 
