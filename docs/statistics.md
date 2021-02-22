@@ -2,10 +2,10 @@
 
 ## Alphabets
 
-104
+106
  symbols for tags.
 
 ## Lexemes
 Approximately 
-448270
+461592
  lexemes in there.

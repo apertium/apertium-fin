@@ -47,7 +47,7 @@ AM_CONDITIONAL([CAN_SAXON], [test x$SAXON != xfalse])
 
 AP_MKINCLUDE
 
-AC_CONFIG_FILES([Makefile apertium-fin.pc])
+AC_CONFIG_FILES([Makefile apertium-fin.pc docs/Makefile])
 AC_OUTPUT
 
 cat <<EOF
