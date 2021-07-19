@@ -17,10 +17,6 @@ if WANT_LTPROC
 TARGETS_COMMON+=$(LANG1).automorf.bin $(LANG1).autogen.bin
 endif
 
-.deps/.d:
-	$(MKDIR_P) .deps
-	touch $@
-
 $(LANG1).autogen.bin: $(BASENAME).$(LANG1).dix .deps/.d
 	apertium-validate-dictionary $<
 	lt-comp rl $< $@ $(BASENAME).$(LANG1).acx
@@ -87,6 +83,8 @@ pkgconfig_DATA = $(BASENAME).pc
 
 apertium_modesdir=$(prefix)/share/apertium/modes/
 
+noinst_DATA=modes/$(LANG1)-morph.mode
+
 install-data-local: install-modes
 
 ## Cleanup
@@ -102,3 +100,6 @@ clean-local:
 
 TESTS=coverages.bash lookups.bash lookdowns.bash
 
+
+test: all
+	apertium-regtest test

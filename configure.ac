@@ -45,6 +45,9 @@ AS_IF([test x$ac_cv_path_PKG_CONFIG = xno],
 AC_PATH_PROGS([SAXON], [saxon9-transform], [false])
 AM_CONDITIONAL([CAN_SAXON], [test x$SAXON != xfalse])
 
+PKG_CHECK_MODULES(REGTEST, apertium-regtest >= 0.0.1, [],
+                  [AC_MSG_WARN([Running tests requires apertium-regtest])])
+
 AP_MKINCLUDE
 
 AC_CONFIG_FILES([Makefile apertium-fin.pc docs/Makefile])
