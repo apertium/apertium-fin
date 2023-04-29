@@ -1,5 +1,5 @@
 ## AUTOMATICALLY GENERATED from omorfi
-##2022-08-01T02+02:00
+##2022-10-20T05+02:00
 
 # omorfi.cg3
 # Constraint grammar for Finnish
@@ -58,6 +58,7 @@ STRICT-TAGS +=
     nom
     par
     tra
+    Case=Com
     clit_han
     clit_ka
     clit_kaan
@@ -175,6 +176,9 @@ LIST ADJ-ORD = (adj ord) ;
 # Infintive a
 LIST INFA-SG = (infa sg) ;
 LIST INFA-PL = (infa pl) ;
+LIST INFA = (infa) ;
+# Infinitive ma + ill
+LIST INFMAAN = (infa sg ill) ;
 # adj cases (and other agreement stuffs)
 LIST ADJ-PAR = (adj par) (det par) (pron dem par) (num par) ;
 LIST ADJ-INE = (adj ine) (det ine) (pron dem ine) (num ine) ;
@@ -217,9 +221,15 @@ LIST BADEVIL_WORDS =
     ("aa" n) ("ee" n) ("ii" n) ("oo" n)
     ("uu" n) ("yy" n) ("ää" n) ("öö" n)
     ("tui" n) ("kapi" n) ("nim" n) ("ma" n)
-    ("su" n) ("määri" n) ;
+    ("su" n) ("määri" n) ("muu" ij);
 
 ## propns that overlap commoner words
+## NB: the large coverage omorfi uses all names in Finnish census so lots
+## are foreign, "rare" but over 5 hits in the census, so not non-existent
+## also presented are parts of multiword names
+## This is only used in last resort removals so there is no harm in listing
+## lots of stuff here, it only affects sentence-initial uppercase
+## ambiguities
 LIST RARER-PROPN =
     ("Vanha" np) ("Mei" np) ("Osa" np) ("Hanska" np)
     ("Osta" np) ("Leikkaa" np) ("Varo" np) ("Tarkki" np)
@@ -250,7 +260,39 @@ LIST RARER-PROPN =
     ("Marin" np) ("Sarja" np) ("Sen" np)
     ("Tus" np) ("Ole" np) ("huopa" np)
     ("Huo" np) ("Ku" np) ("Mar" np)
-    ("Mo" np) ("On" np) ;
+    ("Mo" np) ("On" np) ("Tunne" np)
+    ("Mee" np) ("Mi" np) ("Emme" np) ("En" np)
+    ("To" np) ("Toa" np) ("Ai" np)
+    ("Polve" np) ("Polve" np) ("On" np)
+    ("Pi" np) ("Noi" np) ("Eri" np) ("Vuohi" np)
+    ("Ämpäri" np) ("Yrittä" np) ("Yhtiö" np)
+    ("Ylen" np) ("Viisi" np) ("Viesti" np) 
+    ("Vaali" np) ("Tähti" np) ("Tyttö" np)
+    ("Turma" np) ("Tarina" pron) ("Taitto" np)
+    ("Suuri" np) ("Sama" np) ("Sanoma" np)
+    ("Sato" np) ("Saksanen" np) ("Sai" np) 
+    ("Saare" np) ("Ritvanen" np) ("Rahat" np) 
+    ("Päivä" np) ("Pyhä" np) ("Prinssi" np)
+    ("Prinssessa" np) ("Pisimpi" np) ("Pi" np)
+    ("Perhe" np) ("Paulista" np) ("Pankki" np)
+    ("Paikka" np) ("Osa" np) ("Onnea" np)
+    ("Omena" np) ("Nii" np) ("Kansanen" np)
+    ("Lähe" np) ("Säästö" np) ("Pian" np) 
+    ("Na" np) ("Pola" np) ("Kuva" np)
+    ("Ky" np) ("Valkoinen" np) ("Pilvi" np)
+    ("Ku" np) ("Huijari" np) ("Venäläinen" np)
+    ("Kuo" np) ("Kuolema" np) ("Aiko" np) 
+    ("Ranto" np) ("Mere" np) ("Rinna" np)
+    ("Eränen" np) ("Meres" np) ("Osa" np)
+    ("Aiva" np) ("Poika" np) ("Silla" np)
+    ("Tulonen" np) ("Tai" np) ("Aiko" np)
+    ("Mi" np) ("Tee" np) ("Joen" np) 
+    ("Ni" np) ("Pol" np) ("Hei" np)
+    ("Toveri" np) ("Yli" np) ("Myrsky" np)
+    ("Vatka" np) ("En" np) ("Kiitos" np)
+    ("Viide" np) ("Merelle" np) ("Ku" np) 
+    ("Illa" np) ("Naapuri" np) ("Aihe" np)
+    ("Kota" np) ("Valon" np) ("Herra" np) ;
 
 ## also some cases where a rare noun blocks commoner propn (or other POS)
 ## often languages, nationalities, tribes
@@ -259,7 +301,8 @@ LIST RARER-NOUN =
     ("muutti" n) ("kanna" n) ("kerto" n)
     ("taita" n) ("viisi" n) ("koto" n)
     ("suura" n) ("sai" n) ("saava" n)
-    ("pitkänen" n) ;
+    ("pitkänen" n) ("niisi" n) ("valin" n) 
+    ("talossa" n) ;
 ## adverbs that are rarer than adp or noun counterparts. also some
 ## questionable advs that should've been intjs, and some fixed expressions
 LIST RARER-ADV =
@@ -358,7 +401,8 @@ LIST ADPS-WITH-GEN =
 ## adpositions with illative complement
 LIST ADPS-WITH-ILL = ("nähden" post) ;
 ## adpositions with illative complement
-LIST ADPS-WITH-ELA = ("ulos" post) ("riippuen" post) ;
+LIST ADPS-WITH-ELA = ("ulos" post) ("riippuen" post) 
+                     ("alkaen" post) ;
 ## Verbs with inf complements
 ## ... infa
 LIST VERBS-WITH-INFA =
@@ -417,9 +461,13 @@ LIST SG2POSS-CONFUSION =
     ("poli" pxsg px2 ill)
     ("kohta" pxsg px2)
     ("ohja" pxsg px2)
+    ("pala" pxsg px2)
+    ("tuho" pxsg px2)
     ("mana" pxsg px2) ;
 LIST ADJ-RARELY-NOUN = ("kauhea" n) ("komea" n) ;
 LIST WHAT-THE-ADJ = ("pelko" adj) ("koko" adj) ;
+LIST NUMNOMGENS = ("seitsemän" num) ("kahdeksan" num)
+                  ("yhdeksän" num) ("kymmenen" num) ;
 ## }}}
 ## {{{ words
 ## "siitä" = {to conceive, from it}
@@ -680,6 +728,19 @@ LIST MUASSA-ADV = ("muassa" adv) ;
 # huutaa, huusi
 LIST HUUSIN-NOUN = ("huusi" n) ;
 LIST HUUSIN-VERB = ("huutaa" vblex) ;
+# kokonaan
+LIST KOKONAAN-ADV = ("kokonaan" adv) ;
+LIST KOKONAAN-NOUN = ("koko" n ess) ;
+# ainoastaan
+LIST AINOASTAAN-ADV = ("ainoastaan" adv) ;
+LIST AINOASTAAN-NOUNADJ = ("ainoa" ela) ;
+# yli etc.
+LIST YLI-ADV = ("yli" adv) ;
+# olla päällä
+LIST PÄÄLLÄ-ADV = ("päällä" adv) ;
+# kylmää
+LIST KYLMÄÄ-VERB = ("kylmätä" vblex) ;
+LIST KYLMÄÄ-ADJNOUN = ("kylmä" adj) ("kylmä" n) ;
 # }}}
 # {{{ secondaries
 ## we have these tags when analyser doesn't match the case
@@ -698,6 +759,9 @@ LIST DERIVATIONS = drv_inen drv_ja drv_u ;
 LIST MISSING-HYPHEN = <GoesWith=Missing-> <AffixType=Prefix> ;
 ## Any other guessers
 LIST GUESSED = <Guesser> ;
+## 
+LIST TITLECASED = "<\p[Lu].+>"r ;
+LIST BOS = >>> ;
 # }}}
 
 BEFORE-SECTIONS # {{{ preprocess worst stuff away and select options
@@ -714,6 +778,10 @@ REMOVE:UD-ordinal-is-adjective NUM-ORD (0 ADJ-ORD) ;
 REMOVE:infa-is-sg INFA-PL (0 INFA-SG) ;
 # }}}
 SECTION # {{{ words minimal context
+
+# If someone writes word with initial uppercaase mid-sentence they should
+# mean PROPN (those who break this rule get what they deserve ;-)
+SELECT:uppercased-midsent-propn np (NOT -1 BOS) (NOT -1 punct) ;
 
 # trad. possessives
 # sinun {kuusi, voisi, tiesi}
@@ -741,6 +809,15 @@ REMOVE:Helsing-needs-van HELSING-PROPN (NOT -1 VAN-PROPN) ;
 ##! $ pulloissa on vanhan näköiset etiketit.
 REMOVE:van-needs-PROPN VAN-PROPN (NOT 1 np) ;
 
+##! yli viisi tuhatta
+##! sillan yli
+SELECT:yli-num YLI-ADV (1 num) ;
+
+##! tietokone on päällä
+##! pöydän päällä on tietokone
+##! hän puski palloa päällään
+REMOVE:on-päällä-adv PÄÄLLÄ-ADV (NOT -1 COPULA) ;
+
 ##! $ Japaniin suuntautuva vierailu.
 REMOVE:Japan-not-country JAPAN-PROPN (0 JAPANI-PROPN) ;
 
@@ -765,6 +842,11 @@ REMOVE:maa-maittaa MAITA-VERB (0 MAITA-NOUN) ;
 
 ##! $ parlamentti vietti minuutin hiljaisuuden
 REMOVE:viettää-vietti VIETTI-NOUN (0 VIETTI-VERB) ;
+
+##! kyse ei ole kokonaan uudesta toiminnasta
+REMOVE:kokonaan KOKONAAN-NOUN (0 KOKONAAN-ADV) ;
+##! ainoastaan putket ja viemärit ovat
+REMOVE:ainoastaan AINOASTAAN-NOUNADJ (0 AINOASTAAN-ADV) ;
 
 ##! $ siitä en tiedä mitään.
 ##! € siitä maailma täyteen lapsia.
@@ -794,6 +876,9 @@ SELECT:uusi-adj UUSI-ADJ (0 UUSI-VERB) ;
 
 ##! $ hän ei ole ollenkaan rehellinen.
 SELECT:ollenkaan-adv OLLENKAAN-ADV (0 OLLENKAAN-VERB) ;
+
+##! ulkona oli eilen kylmää
+REMOVE:kylmää-verb KYLMÄÄ-VERB (0 KYLMÄÄ-ADJNOUN) ;
 
 ##! $ oikeus omaan kehoon
 ##! $ minä omaan kehoni
@@ -1098,6 +1183,7 @@ SELECT:measurep-partitive par (-1 num) ;
 ##! € pääministerit tapaavat Intiassa.
 SELECT:verb-pl3-agree-left VERB-PL3 (-1 n + pl) ;
 SELECT:verb-pl3-agree-left-coord VERB-PL3 (-1 n) (-2 cnjcoo) (-3 n) ;
+SELECT:verb-pl3-agree-left VERB-PL3 (-1 pron + pl) ;
 
 ##! omorfi infminen is limited to cop´+ tekeminen c.f. Iso suomen kielioppi
 ##! $ ei ole lahjahevosta suuhin katsomineb
@@ -1124,6 +1210,13 @@ SELECT:adj-ess-agreement ADJ-ESS (1 ess) ;
 SELECT:final-needs-initial final (-2* initial BARRIER final) ;
 ##! $ sanoja "lainattuja sanoja".
 SELECT:initial-needs-final initial (2* final BARRIER initial) ;
+
+##! laiminlyönti voidaan usein todistaa
+SELECT:verbs-with-infa VERBS-WITH-INFA (1* INFA BARRIER CLB) ;
+SELECT:infa-with-verbs INFA (-1* VERBS-WITH-INFA BARRIER CLB) ;
+##! 
+SELECT:verbs-with-infma VERBS-WITH-INFMAAN (1* INFMAAN BARRIER CLB) ;
+SELECT:infma-with-verbs INFMAAN (-1* VERBS-WITH-INFMAAN BARRIER CLB) ;
 
 ##! $ minä unelmoin
 SELECT:subject-1sg PRS-1SG (1 vblex + p1 + sg) ;
@@ -1192,20 +1285,22 @@ SELECT:adverbs-with-rarer-nominals DEFAULT-ADV ;
 REMOVE:adjectives-rarely-possessed adj + POSS ;
 REMOVE:unusual-plurals NOUNS-RARELY-PLURAL ;
 REMOVE:lexicalised-over-derived-sti drv_sti (0 lex_sti) ;
-REMOVE:rare-verb-shadows-commons RARER-VERB ;
-REMOVE:rare-propn-shadows-commons RARER-PROPN ;
-REMOVE:rare-noun-shadows-commons RARER-NOUN ;
-REMOVE:rare-adp-shadows-commons RARER-ADP ;
-REMOVE:rare-adv-shadows-commons RARER-ADV ;
+REMOVE:rare-verb-shadows-commons SUB:* RARER-VERB ;
+REMOVE:rare-propn-shadows-commons SUB:* RARER-PROPN ;
+REMOVE:rare-noun-shadows-commons SUB:* RARER-NOUN ;
+REMOVE:rare-adp-shadows-commons SUB:* RARER-ADP ;
+REMOVE:rare-adv-shadows-commons SUB:* RARER-ADV ;
+REMOVE:rare-adj-shadows-commons SUB:* RARER-ADJ ;
 SELECT:prefer-punct-over-sym punct (0 punct);
-REMOVE:prefer-standard NONSTANDARDS ;
-REMOVE:least-derivations DERIVATIONS ;
+REMOVE:prefer-standard SUB:* NONSTANDARDS ;
+REMOVE:least-derivations SUB:* DERIVATIONS ;
 SELECT:least-compounds MIN-COMPOUND ;
 SELECT:probably MIN-WEIGHT ;
 REMOVE:avoid-instructives ins (NOT 0 vblex + infe) ;
 REMOVE:avoid-abessives abe (NOT 0 vblex + infma) ;
-REMOVE:avoid-clitics CLITIC ;
-REMOVE:blacklists BLACKLISTED ;
+REMOVE:avoid-comitatives Case=Com ;
+REMOVE:avoid-clitics SUB:* CLITIC ;
+REMOVE:blacklists SUB:* BLACKLISTED ;
 REMOVE:avoid-sg0 p0 ;
 REMOVE:rare-pers-pron-forms pl (0 PERS-PRON-SG) ;
 REMOVE:adj-over-drv-va drv_va (0 adj) ;
@@ -1214,11 +1309,16 @@ REMOVE:prefer-original-case RECASED (NOT -1 BEGINSENT);
 
 REMOVE:odd-adjs WHAT-THE-ADJ ;
 
+
+
 # not all lines sent to disambiguator are sentences with a verb but
 # if a user inputs verbless sentence they can expect such parses
 SELECT:try-to-find-one-verb-per-sentence vblex (NOT 0*C vblex) ;
 
 SELECT:adverb-last-resort adv (-1C vblex) ;
+
+
+SELECT:numnom-last-resort nom (0 NUMNOMGENS) ;
 
 # }}}
 
