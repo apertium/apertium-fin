@@ -1,0 +1,955 @@
+"<MISSÄ>"
+	"MISSÄ" adv itg
+"<JAAKKO>"
+	"JAAKKO" np ant m sg nom
+	"JAAKKO" np top m sg nom
+"<ON>"
+	"ON" vblex actv pri p3 sg
+"<?>"
+	"?" punct
+
+"<Jaakko>"
+	"Jaakko" np ant m sg nom
+"<ja>"
+	"ja" cnjcoo
+"<Mari>"
+	"Mari" np ant f sg nom
+"<ovat>"
+	"olla" vblex actv pri p3 pl
+"<puutarhassa>"
+	"puutarha" n sg ine
+"<.>"
+	"." punct
+
+"<Sää>"
+	"Sää" n sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<tänään>"
+	"tänään" adv
+"<hyvä>"
+	"hyvä" adj pst sg nom
+"<,>"
+	"," punct
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<erittäin>"
+	"erittäin" adv
+"<lämmintä>"
+	"lämmin" adj pst sg par
+"<.>"
+	"." punct
+
+"<Mutta>"
+	"Mutta" cnjcoo
+"<eilen>"
+	"eilen" adv
+"<oli>"
+	"olla" vblex actv past p3 sg
+"<erittäin>"
+	"erittäin" adv
+"<kylmää>"
+	"kylmä" adj pst sg par
+"<!>"
+	"!" punct
+
+"<He>"
+	"He" prn pl nom
+"<eivät>"
+	"ei" vaux neg actv p3 pl
+"<voineet>"
+	"voida" vaux actv past pl conneg
+"<leikkiä>"
+	"leikkiä" vblex actv infa sg lat
+"<silloin>"
+	"silloin" adv
+"<ulkona>"
+	"ulkona" adv
+"<.>"
+	"." punct
+
+"<Jaakko>"
+	"Jaakko" np ant m sg nom
+"<ja>"
+	"ja" cnjcoo
+"<Mari>"
+	"Mari" np ant f sg nom
+"<pitävät>"
+	"pitää" vaux actv pri p3 pl
+"<kovasti>"
+	"kovasti" adv
+"<leikkimisestä>"
+	"leikkiminen" n sg ela
+"<,>"
+	"," punct
+"<he>"
+	"he" prn pl nom
+"<leikkivät>"
+	"leikkiä" vblex actv past p3 pl
+"<aina>"
+	"aina" adv
+"<yhdessä>"
+	"yhdessä" adv
+"<puutarhassa>"
+	"puutarha" n sg ine
+"<ison>"
+	"iso" adj pst sg gen
+"<talon>"
+	"talo" n sg gen
+"<edessä>"
+	"edessä" post
+"<.>"
+	"." punct
+
+"<Jaakko>"
+	"Jaakko" np ant m sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<pieni>"
+	"pieni" adj pst sg nom
+"<poika>"
+	"poika" n sg nom
+"<ja>"
+	"ja" cnjcoo
+"<hän>"
+	"hän" prn sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<kuusi>"
+	"kuusi" num card sg nom
+"<vuotta>"
+	"vuosi" n sg par
+"<vanha>"
+	"vanha" adj pst sg nom
+"<.>"
+	"." punct
+
+"<Pieni>"
+	"Pieni" adj pst sg nom
+"<tyttö>"
+	"tyttö" n sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<hänen>"
+	"hän" prn sg gen
+"<siskonsa>"
+	"sisko" n sg nom px3sp
+"<,>"
+	"," punct
+"<hän>"
+	"hän" prn sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<viisi>"
+	"viisi" num card sg nom
+"<vuotta>"
+	"vuosi" n sg par
+"<vanha>"
+	"vanha" adj pst sg nom
+"<.>"
+	"." punct
+
+"<Jaakolla>"
+	"Jaakko" np ant m sg ade
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<pieni>"
+	"pieni" adj pst sg nom
+"<koira>"
+	"koira" n sg nom
+"<,>"
+	"," punct
+"<myös>"
+	"myös" adv
+"<koira>"
+	"koira" n sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<nyt>"
+	"nyt" adv
+"<puutarhassa>"
+	"puutarha" n sg ine
+"<.>"
+	"." punct
+
+"<Koirasta>"
+	"Koira" n sg ela
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<hauskaa>"
+	"hauska" adj pst sg par
+"<leikkiä>"
+	"leikkiä" vblex actv infa sg lat
+"<näiden>"
+	"nämä" prn pl gen
+"<kahden>"
+	"kaksi" num card sg gen
+"<lapsen>"
+	"lapsi" n sg gen
+"<kanssa>"
+	"kanssa" post
+"<.>"
+	"." punct
+
+"<Koira>"
+	"Koira" n sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<erittäin>"
+	"erittäin" adv
+"<iloinen>"
+	"iloinen" adj pst sg nom
+"<nyt>"
+	"nyt" adv
+"<.>"
+	"." punct
+
+"<Onko>"
+	"ko" qst
+		"Olla" vblex actv pri p3 sg
+"<myös>"
+	"myös" adv
+"<Marilla>"
+	"Mari" np ant f sg ade
+"<koira>"
+	"koira" n sg nom
+"<?>"
+	"?" punct
+
+"<Ei>"
+	"Ei" vaux neg actv p3 sg
+"<,>"
+	"," punct
+"<Marilla>"
+	"Mari" np ant f sg ade
+"<ei>"
+	"ei" vaux neg actv p3 sg
+"<ole>"
+	"olla" vblex actv pri conneg
+"<koiraa>"
+	"koira" n sg par
+"<,>"
+	"," punct
+"<hänellä>"
+	"hän" prn sg ade
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<kissa>"
+	"kissa" n sg nom
+"<.>"
+	"." punct
+
+"<Mutta>"
+	"Mutta" cnjcoo
+"<kissa>"
+	"kissa" n sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<talossa>"
+	"talo" n sg ine
+"<,>"
+	"," punct
+"<kissa>"
+	"kissa" n sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<nukkumassa>"
+	"nukkua" vblex actv infma sg ine
+"<.>"
+	"." punct
+
+"<Heidän>"
+	"He" prn pl gen
+"<äitinsä>"
+	"äiti" n sg nom px3sp
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<sisällä>"
+	"sisällä" adv
+"<talossa>"
+	"talo" n sg ine
+"<kissan>"
+	"kissa" n sg gen
+"<kanssa>"
+	"kanssa" post
+"<,>"
+	"," punct
+"<hän>"
+	"hän" prn sg nom
+"<katsoo>"
+	"katsoa" vblex actv pri p3 sg
+"<ikkunasta>"
+	"ikkuna" n sg ela
+"<ulos>"
+	"ulos" post
+"<ja>"
+	"ja" cnjcoo
+	"ja" cnjsub
+"<näkee>"
+	"nähdä" vblex actv pri p3 sg
+"<Jaakon>"
+	"Jaakko" np ant m sg gen
+"<ja>"
+	"ja" cnjcoo
+"<Marin>"
+	"Mari" np ant f sg gen
+"<leikkimässä>"
+	"leikkiä" vblex actv infma sg ine
+"<.>"
+	"." punct
+
+"<Jaakko>"
+	"Jaakko" np ant m sg nom
+"<juoksee>"
+	"juosta" vblex actv pri p3 sg
+"<nopeasti>"
+	"nopeasti" adv
+"<ison>"
+	"iso" adj pst sg gen
+"<,>"
+	"," punct
+"<vanhan>"
+	"vanha" adj pst sg gen
+"<puun>"
+	"puu" n sg gen
+"<luokse>"
+	"luokse" post
+"<,>"
+	"," punct
+"<hän>"
+	"hän" prn sg nom
+"<on>"
+	"olla" vaux actv pri p3 sg
+	"olla" vblex actv pri p3 sg
+"<menossa>"
+	"menossa" adv
+	"meno" n sg ine
+"<piiloon>"
+	"piilo" n sg ill
+"<Marilta>"
+	"Mari" np ant f sg abl
+	"Mari" np top f sg abl
+"<.>"
+	"." punct
+
+"<Tiedätkö>"
+	"ko" qst
+		"Tietää" vblex actv pri p2 sg
+"<miksi>"
+	"miksi" adv
+"<?>"
+	"?" punct
+
+"<Mari>"
+	"Mari" np ant f sg nom
+"<istuu>"
+	"istua" vblex actv pri p3 sg
+"<ja>"
+	"ja" cnjcoo
+"<hänellä>"
+	"hän" prn sg ade
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<kädet>"
+	"käsi" n pl nom
+"<silmiensä>"
+	"silmä" n pl gen px3sp
+"<edessä>"
+	"edessä" post
+"<.>"
+	"." punct
+
+"<Hän>"
+	"Hän" prn sg nom
+"<ei>"
+	"ei" vaux neg actv p3 sg
+"<näe>"
+	"nähdä" vblex actv pri conneg
+"<mitään>"
+	"mikään" prn sp par
+"<ja>"
+	"ja" cnjcoo
+"<hän>"
+	"hän" prn sg nom
+"<laskee>"
+	"laskea" vblex actv pri p3 sg
+"<.>"
+	"." punct
+
+"<Miksi>"
+	"Miksi" adv
+"<hän>"
+	"hän" prn sg nom
+"<tekee>"
+	"tehdä" vblex actv pri p3 sg
+"<niin>"
+	"niin" adv
+"<?>"
+	"?" punct
+
+"<Entä>"
+	"Entä" adv
+"<mitä>"
+	"mitä" adv
+"<Jaakko>"
+	"Jaakko" np ant m sg nom
+"<tekee>"
+	"tehdä" vblex actv pri p3 sg
+"<puun>"
+	"puu" n sg gen
+"<lähellä>"
+	"lähellä" post
+"<?>"
+	"?" punct
+
+"<Se>"
+	"Se" prn sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<leikki>"
+	"leikki" n sg nom
+"<.>"
+	"." punct
+
+"<Kun>"
+	"Kun" cnjsub
+"<Mari>"
+	"Mari" np ant f sg nom
+"<on>"
+	"olla" vaux actv pri p3 sg
+"<lopettanut>"
+	"lopettaa" vblex actv pp pst sg nom
+"<laskemisen>"
+	"laskeminen" n sg gen
+"<,>"
+	"," punct
+"<hän>"
+	"hän" prn sg nom
+"<katsoo>"
+	"katsoa" vblex actv pri p3 sg
+"<ympärilleen>"
+	"ympärille" post px3sp
+"<.>"
+	"." punct
+
+"<Hän>"
+	"Hän" prn sg nom
+"<etsii>"
+	"etsiä" vblex actv pri p3 sg
+"<Jaakkoa>"
+	"Jaakko" np ant m sg par
+"<:>"
+	":" punct
+"<minne>"
+	"minne" adv
+"<hän>"
+	"hän" prn sg nom
+"<meni>"
+	"mennä" vblex actv past p3 sg
+"<?>"
+	"?" punct
+
+"<Näitkö>"
+	"ko" qst
+		"Nähdä" vblex actv past p2 sg
+"<sinä>"
+	"sinä" prn sg nom
+"<hänet>"
+	"hän" prn sg acc
+"<?>"
+	"?" punct
+
+"<Mari>"
+	"Mari" np ant f sg nom
+"<ei>"
+	"ei" vaux neg actv p3 sg
+"<tiedä>"
+	"tietää" vblex actv pri conneg
+"<missä>"
+	"missä" adv
+"<Jaakko>"
+	"Jaakko" np ant m sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<.>"
+	"." punct
+
+"<Hän>"
+	"Hän" prn sg nom
+"<kysyy>"
+	"kysyä" vblex actv pri p3 sg
+"<koiralta>"
+	"koira" n sg abl
+"<:>"
+	":" punct
+"<">"
+	""" punct
+"<Näitkö>"
+	"ko" qst
+		"Nähdä" vblex actv past p2 sg
+"<sinä>"
+	"sinä" prn sg nom
+"<Jaakkoa>"
+	"Jaakko" np ant m sg par
+"<?>"
+	"?" punct
+"<">"
+	""" punct
+"<.>"
+	"." punct
+
+"<Mutta>"
+	"Mutta" cnjcoo
+"<koira>"
+	"koira" n sg nom
+"<ei>"
+	"ei" vaux neg actv p3 sg
+"<tietenkään>"
+	"tietenkään" adv
+"<osaa>"
+	"osata" vaux actv pri conneg
+"<puhua>"
+	"puhua" vblex actv infa sg lat
+"<!>"
+	"!" punct
+
+"<Niinpä>"
+	"Niinpä" adv
+"<Mari>"
+	"Mari" np ant f sg nom
+"<ei>"
+	"ei" vaux neg actv p3 sg
+"<saa>"
+	"saada" vblex actv pri conneg
+"<vastausta>"
+	"vastaus" n sg par
+"<kysymykseensä>"
+	"kysymys" n sg ill px3sp
+"<.>"
+	"." punct
+
+"<Ihmiset>"
+	"Ihminen" n pl nom
+"<eivät>"
+	"ei" vaux neg actv p3 pl
+"<koskaan>"
+	"koskaan" adv
+"<saa>"
+	"saada" vblex actv pri conneg
+"<vastausta>"
+	"vastaus" n sg par
+"<,>"
+	"," punct
+"<kun>"
+	"kun" cnjsub
+"<he>"
+	"he" prn pl nom
+"<puhuvat>"
+	"puhua" vblex actv pri p3 pl
+"<koirille>"
+	"koira" n pl all
+"<!>"
+	"!" punct
+
+"<Mari>"
+	"Mari" np ant f sg nom
+"<katsoo>"
+	"katsoa" vblex actv pri p3 sg
+"<äitiään>"
+	"äiti" n sg par px3sp
+"<ikkunan>"
+	"ikkuna" n sg gen
+"<takaa>"
+	"takaa" post
+"<,>"
+	"," punct
+"<hänen>"
+	"hän" prn sg gen
+"<äitinsä>"
+	"äiti" n sg nom px3sp
+"<nauraa>"
+	"nauraa" vblex actv pri p3 sg
+"<.>"
+	"." punct
+
+"<Mari>"
+	"Mari" np ant f sg nom
+"<ajattelee>"
+	"ajatella" vblex actv pri p3 sg
+"<,>"
+	"," punct
+"<että>"
+	"että" cnjsub
+"<hän>"
+	"hän" prn sg nom
+"<näki>"
+	"nähdä" vblex actv past p3 sg
+"<minne>"
+	"minne" adv
+"<Jaakko>"
+	"Jaakko" np ant m sg nom
+"<meni>"
+	"mennä" vblex actv past p3 sg
+"<:>"
+	":" punct
+"<">"
+	""" punct
+"<Kerro>"
+	"Kertoa" vblex actv imp p2 sg
+"<minulle>"
+	"minä" prn sg all
+"<missä>"
+	"missä" adv
+"<hän>"
+	"hän" prn sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<!>"
+	"!" punct
+"<">"
+	""" punct
+"<,>"
+	"," punct
+"<hän>"
+	"hän" prn sg nom
+"<sanoo>"
+	"sanoa" vblex actv pri p3 sg
+"<äidillensä>"
+	"äiti" n sg all px3sp
+"<.>"
+	"." punct
+
+"<">"
+	""" punct
+"<Ei>"
+	"Ei" ij
+"<Mari>"
+	"Mari" np ant f sg nom
+"<,>"
+	"," punct
+"<en>"
+	"ei" vaux neg actv p1 sg
+"<voi>"
+	"voida" vaux actv pri conneg
+"<kertoa>"
+	"kertoa" vblex actv infa sg lat
+"<sinulle>"
+	"sinä" prn sg all
+"<!>"
+	"!" punct
+"<">"
+	""" punct
+"<,>"
+	"," punct
+"<hän>"
+	"hän" prn sg nom
+"<vastaa>"
+	"vastata" vblex actv pri p3 sg
+"<.>"
+	"." punct
+
+"<Vaikka>"
+	"Vaikka" cnjsub
+"<hän>"
+	"hän" prn sg nom
+"<todennäköisesti>"
+	"todennäköisesti" adv
+"<tietää>"
+	"tietää" vblex actv pri p3 sg
+"<missä>"
+	"missä" adv
+"<poika>"
+	"poika" n sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<,>"
+	"," punct
+"<hän>"
+	"hän" prn sg nom
+"<ei>"
+	"ei" vaux neg actv p3 sg
+"<halua>"
+	"haluta" vblex actv pri conneg
+"<kertoa>"
+	"kertoa" vblex actv infa sg lat
+"<.>"
+	"." punct
+
+"<Mari>"
+	"Mari" np ant f sg nom
+"<kävelee>"
+	"kävellä" vblex actv pri p3 sg
+"<hitaasti>"
+	"hitaasti" adv
+"<puutarhan>"
+	"puutarha" n sg gen
+"<läpi>"
+	"läpi" post
+"<.>"
+	"." punct
+
+"<Hän>"
+	"Hän" prn sg nom
+"<yrittää>"
+	"yrittää" vblex actv pri p3 sg
+"<yhä>"
+	"yhä" adv
+"<etsiä>"
+	"etsiä" vblex actv infa sg lat
+"<Jaakkoa>"
+	"Jaakko" np ant m sg par
+"<.>"
+	"." punct
+
+"<Hän>"
+	"Hän" prn sg nom
+"<katsoo>"
+	"katsoa" vblex actv pri p3 sg
+"<pöydän>"
+	"pöytä" n sg gen
+"<alle>"
+	"alle" post
+"<ja>"
+	"ja" cnjcoo
+"<tuolien>"
+	"tuoli" n pl gen
+"<alle>"
+	"alle" post
+"<,>"
+	"," punct
+"<mutta>"
+	"mutta" cnjcoo
+"<Jaakko>"
+	"Jaakko" np ant m sg nom
+"<ei>"
+	"ei" vaux neg actv p3 sg
+"<ole>"
+	"olla" vblex actv pri conneg
+"<siellä>"
+	"siellä" adv
+"<.>"
+	"." punct
+
+"<Hän>"
+	"Hän" prn sg nom
+"<katsoo>"
+	"katsoa" vblex actv pri p3 sg
+"<kaikkialle>"
+	"kaikkialle" adv
+"<,>"
+	"," punct
+"<mutta>"
+	"mutta" cnjcoo
+"<ei>"
+	"ei" vaux neg actv p3 sg
+"<pysty>"
+	"pystyä" vblex actv pri conneg
+"<löytämään>"
+	"löytää" vblex actv infma sg ill
+"<Jaakkoa>"
+	"Jaakko" np ant m sg par
+"<.>"
+	"." punct
+
+"<Sitten>"
+	"Sitten" adv
+"<hän>"
+	"hän" prn sg nom
+"<kuulee>"
+	"kuulla" vblex actv pri p3 sg
+"<äänen>"
+	"ääni" n sg gen
+"<,>"
+	"," punct
+"<se>"
+	"se" prn sg nom
+"<tulee>"
+	"tulla" vblex actv pri p3 sg
+"<ison>"
+	"iso" adj pst sg gen
+"<,>"
+	"," punct
+"<vanhan>"
+	"vanha" adj pst sg gen
+"<puun>"
+	"puu" n sg gen
+"<takaa>"
+	"takaa" post
+"<.>"
+	"." punct
+
+"<Voisiko>"
+	"ko" qst
+		"Voida" vaux actv cni p3 sg
+"<se>"
+	"se" prn sg nom
+"<olla>"
+	"olla" vblex actv infa sg lat
+"<Jaakko>"
+	"Jaakko" np ant m sg nom
+"<?>"
+	"?" punct
+
+"<Siellä>"
+	"Siellä" adv
+"<se>"
+	"se" det sg nom
+"<ääni>"
+	"ääni" n sg nom
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<taas>"
+	"taas" adv
+"<!>"
+	"!" punct
+
+"<Hän>"
+	"Hän" prn sg nom
+"<kuuntelee>"
+	"kuunnella" vblex actv pri p3 sg
+"<huolellisesti>"
+	"huolellisesti" adv
+"<.>"
+	"." punct
+
+"<Se>"
+	"Se" prn sg nom
+"<ei>"
+	"ei" vaux neg actv p3 sg
+"<ole>"
+	"olla" vblex actv pri conneg
+"<lintu>"
+	"lintu" n sg nom
+"<tai>"
+	"tai" cnjcoo
+"<muu>"
+	"muu" adj pst sg nom
+"<eläin>"
+	"eläin" n sg nom
+"<.>"
+	"." punct
+
+"<Nyt>"
+	"Nyt" adv
+"<hän>"
+	"hän" prn sg nom
+"<voi>"
+	"voida" vaux actv pri p3 sg
+"<kuulla>"
+	"kuulla" vblex actv infa sg lat
+"<sen>"
+	"se" prn sg gen
+"<hyvin>"
+	"hyvin" adv
+"<.>"
+	"." punct
+
+"<Sen>"
+	"Se" prn sg gen
+"<täytyy>"
+	"täytyä" vaux actv pri p3 sg
+"<olla>"
+	"olla" vblex actv infa sg lat
+"<Jaakko>"
+	"Jaakko" np ant m sg nom
+"<!>"
+	"!" punct
+
+"<Sitten>"
+	"Sitten" adv
+"<hän>"
+	"hän" prn sg nom
+"<näkee>"
+	"nähdä" vblex actv pri p3 sg
+"<myös>"
+	"myös" adv
+"<pienen>"
+	"pieni" adj pst sg gen
+"<käden>"
+	"käsi" n sg gen
+"<ja>"
+	"ja" cnjcoo
+"<kun>"
+	"kun" cnjsub
+"<hän>"
+	"hän" prn sg nom
+"<kävelee>"
+	"kävellä" vblex actv pri p3 sg
+"<lähemmäksi>"
+	"lähemmäksi" adv
+"<,>"
+	"," punct
+"<hän>"
+	"hän" prn sg nom
+"<näkee>"
+	"nähdä" vblex actv pri p3 sg
+"<myös>"
+	"myös" adv
+"<pojan>"
+	"poika" n sg gen
+"<pään>"
+	"pää" n sg gen
+"<!>"
+	"!" punct
+
+"<Mari>"
+	"Mari" np ant f sg nom
+"<nauraa>"
+	"nauraa" vblex actv pri p3 sg
+"<ja>"
+	"ja" cnjcoo
+"<sanoo>"
+	"sanoa" vblex actv pri p3 sg
+"<:>"
+	":" punct
+"<">"
+	""" punct
+"<Löysin>"
+	"Löytää" vblex actv past p1 sg
+"<sinut>"
+	"sinä" prn sg acc
+"<!>"
+	"!" punct
+"<">"
+	""" punct
+"<.>"
+	"." punct
+
+"<He>"
+	"He" prn pl nom
+"<molemmat>"
+	"molemmat" prn pl nom
+"<ovat>"
+	"olla" vblex actv pri p3 pl
+"<iloisia>"
+	"iloinen" adj pst pl par
+"<ja>"
+	"ja" cnjcoo
+"<menevät>"
+	"mennä" vblex actv pri p3 pl
+"<taloon>"
+	"talo" n sg ill
+"<,>"
+	"," punct
+"<on>"
+	"olla" vblex actv pri p3 sg
+"<aika>"
+	"aika" n sg nom
+"<syödä>"
+	"syödä" vblex actv infa sg lat
+"<jotain>"
+	"jotain" adv
+"<ja>"
+	"ja" cnjcoo
+"<juoda>"
+	"juoda" vblex actv infa sg lat
+"<vähän>"
+	"vähän" adv
+"<vettä>"
+	"vesi" n sg par
+"<!>"
+	"!" punct
+"<.>"
+	"." punct
+
+
