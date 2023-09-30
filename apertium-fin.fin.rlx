@@ -1,5 +1,5 @@
 ## AUTOMATICALLY GENERATED from omorfi
-##2022-10-20T05+02:00
+##2023-09-30T19+02:00
 
 # omorfi.cg3
 # Constraint grammar for Finnish
@@ -33,7 +33,7 @@ STRICT-TAGS +=
     adv
     post
     np
-    pron
+    prn
     punct
     punct
     cnjcoo
@@ -143,7 +143,7 @@ SETS
 
 # {{{ grammar groups
 ## Nominal poses
-LIST NOMINAL = n adj pron np ;
+LIST NOMINAL = n adj prn np ;
 ## Clitic particle tags
 LIST CLITIC = clit_han clit_ko clit_pa clit_s clit_ka clit_kaan clit_kin ;
 ## Conjunctions
@@ -180,28 +180,28 @@ LIST INFA = (infa) ;
 # Infinitive ma + ill
 LIST INFMAAN = (infa sg ill) ;
 # adj cases (and other agreement stuffs)
-LIST ADJ-PAR = (adj par) (det par) (pron dem par) (num par) ;
-LIST ADJ-INE = (adj ine) (det ine) (pron dem ine) (num ine) ;
-LIST ADJ-ELA = (adj ela) (det ela) (pron dem ela) (num ela) ;
-LIST ADJ-ILL = (adj ill) (det ill) (pron dem ill) (num ill) ;
-LIST ADJ-ADE = (adj ade) (det ade) (pron dem ade) (num ade) ;
-LIST ADJ-ABL = (adj abl) (det abl) (pron dem abl) (num abl) ;
-LIST ADJ-ALL = (adj all) (det all) (pron dem all) (num all) ;
-LIST ADJ-TRA = (adj tra) (det tra) (pron dem tra) (num tra) ;
-LIST ADJ-ABE = (adj abe) (det abe) (pron dem abe) (num abe) ;
-LIST ADJ-ESS = (adj ess) (det ess) (pron dem ess) (num ess) ;
+LIST ADJ-PAR = (adj par) (det par) (prn dem par) (num par) ;
+LIST ADJ-INE = (adj ine) (det ine) (prn dem ine) (num ine) ;
+LIST ADJ-ELA = (adj ela) (det ela) (prn dem ela) (num ela) ;
+LIST ADJ-ILL = (adj ill) (det ill) (prn dem ill) (num ill) ;
+LIST ADJ-ADE = (adj ade) (det ade) (prn dem ade) (num ade) ;
+LIST ADJ-ABL = (adj abl) (det abl) (prn dem abl) (num abl) ;
+LIST ADJ-ALL = (adj all) (det all) (prn dem all) (num all) ;
+LIST ADJ-TRA = (adj tra) (det tra) (prn dem tra) (num tra) ;
+LIST ADJ-ABE = (adj abe) (det abe) (prn dem abe) (num abe) ;
+LIST ADJ-ESS = (adj ess) (det ess) (prn dem ess) (num ess) ;
 # inmpv sg2 is systematically indv pres sg3
 LIST IMPV-SG2 = (imp p2 sg) ;
 LIST INDV-SG3 = (ind p3 sg) ;
 # Negation
 LIST NEG-AUX = (vaux neg) ;
 # Personals
-LIST PRS-1SG = (pron p1 sg) ;
-LIST PRS-2SG = (pron p2 sg) ;
-LIST PRS-3SG = (pron p3 sg) ;
-LIST PRS-1PL = (pron p1 pl) ;
-LIST PRS-2PL = (pron p2 pl) ;
-LIST PRS-3PL = (pron p3 pl) ;
+LIST PRS-1SG = (prn p1 sg) ;
+LIST PRS-2SG = (prn p2 sg) ;
+LIST PRS-3SG = (prn p3 sg) ;
+LIST PRS-1PL = (prn p1 pl) ;
+LIST PRS-2PL = (prn p2 pl) ;
+LIST PRS-3PL = (prn p3 pl) ;
 # }}}
 # {{{ sentences and clauses
 LIST BEGINSENT = >>> ;
@@ -268,7 +268,7 @@ LIST RARER-PROPN =
     ("Ämpäri" np) ("Yrittä" np) ("Yhtiö" np)
     ("Ylen" np) ("Viisi" np) ("Viesti" np) 
     ("Vaali" np) ("Tähti" np) ("Tyttö" np)
-    ("Turma" np) ("Tarina" pron) ("Taitto" np)
+    ("Turma" np) ("Tarina" prn) ("Taitto" np)
     ("Suuri" np) ("Sama" np) ("Sanoma" np)
     ("Sato" np) ("Saksanen" np) ("Sai" np) 
     ("Saare" np) ("Ritvanen" np) ("Rahat" np) 
@@ -474,7 +474,7 @@ LIST NUMNOMGENS = ("seitsemän" num) ("kahdeksan" num)
 LIST SIITÄ-VERBS =
     ("siittää" vblex) ("siitä" vblex) ("si’itä" vblex) ;
 LIST SIITÄ-DEM =
-    ("se" pron) ("se" det) ;
+    ("se" prn) ("se" det) ;
 LIST SIITÄ-NOUN = ("sii" n) ;
 ## "sinun" = yours
 LIST SINUN = ("sinä" sg gen) ;
@@ -508,10 +508,10 @@ LIST VÄHÄN-ADV = ("vähän" adv) ;
 LIST VÄHÄN-ADJ = ("vähä" adj gen) ;
 ## vaikka mitä
 LIST VAIKKA-ADV = ("vaikka" adv) ;
-LIST ITG = ("mikä" pron) ("kuinka" adv) ;
+LIST ITG = ("mikä" prn) ("kuinka" adv) ;
 ## häntä {tail, him}
 LIST HÄNTÄ-NOUN = ("häntä" n) ;
-LIST HÄNTÄ-PRON = ("hän" pron par) ;
+LIST HÄNTÄ-PRON = ("hän" prn par) ;
 ## erikseen { separately, with his rounds }
 LIST ERIKSEEN-ADV = ("erikseen" adv) ;
 LIST ERIKSEEN-NOUN = ("erä" n pl px3) ;
@@ -540,21 +540,21 @@ LIST JÄLJELLE-AD = ("jäljelle" adv) ("jäljelle" post) ;
 LIST OLLENKAAN-ADV = ("ollenkaan" adv) ;
 LIST OLLENKAAN-VERB = ("olla" infe clit_kaan) ;
 ## erään = {of some, to a set}
-LIST ERÄÄN-PRON = ("eräs" pron sg gen) ;
+LIST ERÄÄN-PRON = ("eräs" prn sg gen) ;
 ## merkitystä = {of importance, from marked}
 LIST MERKITYSTÄ-PAR = ("merkitys" n par) ;
 ## noissa = {in those, in ashes}
-LIST NOISSA-PRON = ("nuo" pron ine) ("tuo" pron pl ine) ;
+LIST NOISSA-PRON = ("nuo" prn ine) ("tuo" prn pl ine) ;
 LIST NOISSA-NOUN = ("noki" n sg ine) ;
 ## peräisin = {originating from, I'd guarantee}
 LIST PERÄISIN-ADV = ("peräisin" adv) ;
 LIST PERÄISIN-VERB = ("perätä" vblex cni p1 sg) ;
 ## sekin = {that one too, of cheque}
-LIST SEKIN-PRON = ("se" pron clit_kin) ;
+LIST SEKIN-PRON = ("se" prn clit_kin) ;
 LIST LUNASTAA-VERB = ("lunastaa" vblex) ;
 ##
-LIST TUO-PRON = ("tuo" pron) ;
-LIST KAIKKI = ("kaikki" pron) ("kaikki" adj) ;
+LIST TUO-PRON = ("tuo" prn) ;
+LIST KAIKKI = ("kaikki" prn) ("kaikki" adj) ;
 ## vastaan {against}
 LIST VASTAAN-ADV = ("vastaan" adv) ;
 ##
@@ -639,9 +639,9 @@ LIST TAKAISIN-ADV = ("takaisin" adv) ;
 ##
 LIST TOISTAMISEEN-ADV = ("toistamiseen" adv) ;
 ##
-LIST MINÄ-PRON = ("minä" pron) ;
+LIST MINÄ-PRON = ("minä" prn) ;
 ##
-LIST HEIDÄN-PRON = ("he" pron gen) ("hän" pron pl gen) ;
+LIST HEIDÄN-PRON = ("he" prn gen) ("hän" prn pl gen) ;
 ##
 LIST LUJAA-ADV = ("lujaa" adv) ;
 ##
@@ -660,7 +660,7 @@ LIST OLKAA-VERB = ("olla" vblex imp pl p2) ;
 ## teillä = {teas, roads, yours}
 LIST TEE-PLURAL = ("tee" n pl) ;
 LIST TIE-PLURAL = ("tie" n pl) ;
-LIST TE-PLURAL = ("te" pron) ("sinä" pron pl) ;
+LIST TE-PLURAL = ("te" prn) ("sinä" prn pl) ;
 ## tilanne = {your space, situation}
 LIST TILANNE-NOUN = ("tilanne" n) ;
 LIST TILANNE-POSS = ("tila" n pxpl px2) ;
@@ -700,7 +700,7 @@ LIST VAAN-CCONJ = ("vaan" cnjcoo) ;
 LIST PIDETÄ-PASS = ("pidetä" vblex pasv) ;
 LIST PITÄÄ-PASS = ("pitää" vblex pasv) ;
 ## joissa = {in the rivers, which}
-LIST JOISSA-PRON = ("joka" pron pl) ;
+LIST JOISSA-PRON = ("joka" prn pl) ;
 LIST JOISSA-NOUN = ("joki" n pl) ;
 ## apu, avu
 LIST AVU-NOUN = ("apu" n) ;
@@ -829,7 +829,7 @@ REMOVE:nainen-unlikely-potential  NAINEN-VERB (0 n) ;
 REMOVE:vaikka-mitä VAIKKA-ADV (NEGATE 1 ITG) ;
 
 ##! $ niiden pitää tulla myös.
-REMOVE:niisi-niiden NIISI-NOUN (0 pron) ;
+REMOVE:niisi-niiden NIISI-NOUN (0 prn) ;
 
 ##
 REMOVE:päivätä-päivää PÄIVÄÄ-VERB (0 PÄIVÄÄ-NOUN) ;
@@ -943,7 +943,7 @@ SELECT:sekin-pron SEKIN-PRON (NEGATE -1* LUNASTAA-VERB BARRIER vblex) ;
 
 
 ##! hmm?
-SELECT:kaikki-tuo TUO-PRON (-1 KAIKKI) (NOT -2 pron) ;
+SELECT:kaikki-tuo TUO-PRON (-1 KAIKKI) (NOT -2 prn) ;
 
 ##! $ tankki täyteen bensaa.
 
@@ -1183,7 +1183,7 @@ SELECT:measurep-partitive par (-1 num) ;
 ##! € pääministerit tapaavat Intiassa.
 SELECT:verb-pl3-agree-left VERB-PL3 (-1 n + pl) ;
 SELECT:verb-pl3-agree-left-coord VERB-PL3 (-1 n) (-2 cnjcoo) (-3 n) ;
-SELECT:verb-pl3-agree-left VERB-PL3 (-1 pron + pl) ;
+SELECT:verb-pl3-agree-left VERB-PL3 (-1 prn + pl) ;
 
 ##! omorfi infminen is limited to cop´+ tekeminen c.f. Iso suomen kielioppi
 ##! $ ei ole lahjahevosta suuhin katsomineb
