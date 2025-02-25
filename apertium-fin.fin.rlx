@@ -1,5 +1,5 @@
 ## AUTOMATICALLY GENERATED from omorfi
-##2023-09-30T19+02:00
+##2023-11-28T01+01:00
 
 # omorfi.cg3
 # Constraint grammar for Finnish
@@ -292,7 +292,14 @@ LIST RARER-PROPN =
     ("Vatka" np) ("En" np) ("Kiitos" np)
     ("Viide" np) ("Merelle" np) ("Ku" np) 
     ("Illa" np) ("Naapuri" np) ("Aihe" np)
-    ("Kota" np) ("Valon" np) ("Herra" np) ;
+    ("Kota" np) ("Valon" np) ("Herra" np) 
+    ("Eile" np) ("Hee" np) ("Jokki" np)
+    ("Kan" np) ("Kato" np) ("Käärme" np)
+    ("Lie" np) ("Mu" np) ("Mui" np)
+    ("Ola" np) ("Olka" np) ("Pelin" np)
+    ("Pöytä" np) ("Sopu" np) ("Sopu" np)
+    ("Tais" np) ("Tokko" np) ("Tulle" np)
+    ("Valla" np) ("Vo" np) ("turpa" np) ;
 
 ## also some cases where a rare noun blocks commoner propn (or other POS)
 ## often languages, nationalities, tribes
@@ -741,6 +748,9 @@ LIST PÄÄLLÄ-ADV = ("päällä" adv) ;
 # kylmää
 LIST KYLMÄÄ-VERB = ("kylmätä" vblex) ;
 LIST KYLMÄÄ-ADJNOUN = ("kylmä" adj) ("kylmä" n) ;
+# kirjaan
+LIST KIRJAAN-VERB = ("kirjata" vblex) ;
+LIST KIRJAAN-NOUN = ("kirja" n) ;
 # }}}
 # {{{ secondaries
 ## we have these tags when analyser doesn't match the case
@@ -879,6 +889,8 @@ SELECT:ollenkaan-adv OLLENKAAN-ADV (0 OLLENKAAN-VERB) ;
 
 ##! ulkona oli eilen kylmää
 REMOVE:kylmää-verb KYLMÄÄ-VERB (0 KYLMÄÄ-ADJNOUN) ;
+##! Pari kertaa hän kurkisti sisarensa kirjaan
+REMOVE:kirjaa-verb KIRJAAN-VERB (0 KIRJAAN-NOUN) ;
 
 ##! $ oikeus omaan kehoon
 ##! $ minä omaan kehoni
