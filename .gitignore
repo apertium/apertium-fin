@@ -1,3 +1,13 @@
+# tests and stuffs
+coverages.bash.log
+coverages.bash.trs
+lookdowns.bash.log
+lookdowns.bash.trs
+lookups.bash.log
+lookups.bash.trs
+misses.freqs
+test-suite.log
+
 # http://www.gnu.org/software/automake
 
 Makefile.in
