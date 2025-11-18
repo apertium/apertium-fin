@@ -1,8 +1,114 @@
+[-D9i9HP3-yFo#0] ^ottavat/ottaa<vblex><actv><pprs><pst><pl><nom>/ottaa<vblex><actv><pri><p3><pl>/ottava<adj><pst><pl><nom>$
+[/-D9i9HP3-yFo]
+[-DG4QL3iezNw#0] ^koira/koira<n><sg><nom>$
+[/-DG4QL3iezNw]
+[0YXeqgzl9S2B#0] ^sininen/sininen<adj><pst><sg><nom>/sininen<n><sg><nom>$
+[/0YXeqgzl9S2B]
+[2HzyaoE60z5M#0] ^nuo/nuo<prn><dem><pl><nom>$
+[/2HzyaoE60z5M]
+[4ORUjfiKNdWF#0] ^iso/iso-<n><compound-only-L><use_nonstd>/iso<adj><pst><sg><nom>/iso<n><sg><nom>$
+[/4ORUjfiKNdWF]
+[4VXXW1nU4E4Q#0] ^kolme/kolme<num><card><sg><nom>$
+[/4VXXW1nU4E4Q]
+[4vQTVU7BKenh#0] ^talo/talo<n><sg><nom>$
+[/4vQTVU7BKenh]
+[5ZS5Cj1OoMhA#0] ^juot/juko<n><pl><nom>/juoda<vblex><actv><pri><p2><sg>$
+[/5ZS5Cj1OoMhA]
+[9N3RlcqwRDDU#0] ^tai/tai<adv><use_blacklist>/tai<cnjcoo>/tai<cnjsub>/tai<n><use_blacklist><sg><nom>$
+[/9N3RlcqwRDDU]
+[Ap_uv739h-Gi#0] ^toinen/toinen<adj><ord><pst><sg><nom>/toinen<n><sg><nom>/toinen<num><sg><nom>/toinen<prn><qu><sg><nom>/toinen<prn><rec><sg><nom>$
+[/Ap_uv739h-Gi]
+[BFj1L8j5q791#0] ^punainen/punainen<adj><pst><sg><nom>/punainen<n><sg><nom>$
+[/BFj1L8j5q791]
 [BzmAqtg7k8r9#0] ^α-dimetyylibentsyyli-isosyanaateistasipa/α-dimetyylibentsyyli-isosyanaatti<n><pl><ela><px2sg>+pa<enc>$
 [/BzmAqtg7k8r9]
+[CksbBDI5yeRI#0] ^kaksi/kaksi<num><card><sg><nom>$
+[/CksbBDI5yeRI]
+[FpntkU0d0o-l#0] ^neljä/neljä<num><card><sg><nom>$
+[/FpntkU0d0o-l]
+[GEy5FwlNFo54#0] ^kolmas/kolmas<adj><ord><pst><sg><nom>/kolmas<num><sg><nom>$
+[/GEy5FwlNFo54]
+[IWWLHGjpztG5#0] ^musta/musta<adj><pst><sg><nom>/musta<n><sg><nom>/mä<prn><pers><p1><sg><use_dialect><ela>$
+[/IWWLHGjpztG5]
+[IacM7h-tanMW#0] ^hyvä/hyvä<adj><pst><sg><nom>/hyvä<n><sg><nom>$
+[/IacM7h-tanMW]
+[J0TM0Qx1M71z#0] ^me/me<prn><pers><p1><pl><nom>$
+[/J0TM0Qx1M71z]
+[KwtpdT8R4fCy#0] ^minä/mikä<prn><itg><sp><ess>/mikä<prn><qu><sp><ess>/mikä<prn><rel><sp><ess>/minä<n><sg><nom>/minä<prn><pers><p1><sg><nom>$
+[/KwtpdT8R4fCy]
+[LWyakN049oUl#0] ^te/te<prn><pers><p2><pl><nom>$
+[/LWyakN049oUl]
+[M45eBIcyynGr#0] ^myyt/myydä<vblex><actv><pri><p2><sg>/myy<n><pl><nom>$
+[/M45eBIcyynGr]
+[MaB_wa9V-51n#0] ^neljäs/neljäs<adj><ord><pst><sg><nom>/neljäs<num><sg><nom>$
+[/MaB_wa9V-51n]
+[NqnAMcgyd7tv#0] ^emme/ei<vaux><neg><actv><p1><pl>/ei<vblex><neg><actv><p1><pl>$
+[/NqnAMcgyd7tv]
+[NwL8GGZjB5YF#0] ^ja/ja<adv><use_dialect>/ja<cnjcoo>/ja<cnjsub>/ja<n><sg><nom>$
+[/NwL8GGZjB5YF]
+[Ny9-L9LQHOKh#0] ^he/he<ij>/he<prn><pers><p3><pl><nom>$
+[/Ny9-L9LQHOKh]
+[OKZFxMSsbtRL#0] ^tuo/tuoda<vblex><actv><imp><p2><sg>/tuoda<vblex><actv><pri><conneg>/tuoda<vblex><actv><pri><p3><sg>/tuo<prn><dem><sg><nom>$
+[/OKZFxMSsbtRL]
+[OLAlyZcAcnJn#0] ^poro/poro<n><sg><nom>$
+[/OLAlyZcAcnJn]
+[OdYz3JzwFfuZ#0] ^ei/ei-<n><compound-only-L><use_nonstd>/ei<adv>/ei<ij>/ei<vaux><neg><actv><p3><sg>/ei<vblex><neg><actv><p3><sg>$
+[/OdYz3JzwFfuZ]
+[Pmx6Jz83Nfjp#0] ^hyvin/hyvin<adv>/hyvä<adj><pst><pl><ins>/hyvä<adj><sup><sg><nom>/hyvä<n><pl><ins>$
+[/Pmx6Jz83Nfjp]
+[RXvLSl2ZHoZa#0] ^pieni/pieniä<vblex><actv><imp><p2><sg>/pieniä<vblex><actv><past><p3><sg>/pieniä<vblex><actv><pri><conneg>/pieni<adj><pst><sg><nom>$
+[/RXvLSl2ZHoZa]
+[Rxrr-uyI6htZ#0] ^valkea/valkea-<n><compound-only-L><use_nonstd>/valkea<adj><pst><sg><nom>/valkea<n><sg><nom>$
+[/Rxrr-uyI6htZ]
+[aNqFvktearvY#0] ^huono/huono<adj><pst><sg><nom>/huono<n><sg><nom>$
+[/aNqFvktearvY]
+[bQTmX4kI6WkR#0] ^menemme/mennä<vblex><actv><pri><p1><pl>$
+[/bQTmX4kI6WkR]
+[cBAsJ42IdDMi#0] ^tämä/tämä<prn><dem><sg><nom>$
+[/cBAsJ42IdDMi]
+[d6_zp72J-yVu#0] ^huonosti/huonosti<adv>$
+[/d6_zp72J-yVu]
+[da6WMUR4vflT#0] ^ostan/ostaa<vblex><actv><pri><p1><sg>$
+[/da6WMUR4vflT]
+[gzXaZkceFPDa#0] ^lyhyt/lyhyt<adj><pst><sg><nom>$
+[/gzXaZkceFPDa]
+[h4uDgnsHK2qW#0] ^hän/hän<prn><pers><p3><sg><nom>$
+[/h4uDgnsHK2qW]
+[jx_ZlSTahznz#0] ^antavat/antaa<vblex><actv><pprs><pst><pl><nom>/antaa<vblex><actv><pri><p3><pl>/antava<adj><pst><pl><nom>$
+[/jx_ZlSTahznz]
+[ly42hIyYjU_s#0] ^ensimmäinen/ensimmäinen<adj><ord><pst><sg><nom>/ensimmäinen<n><sg><nom>/ensimmäinen<num><sg><nom>$
+[/ly42hIyYjU_s]
+[mOfMON1IpN6G#0] ^hitaasti/hitaasti<adv>$
+[/mOfMON1IpN6G]
+[mf1gampnMqXs#0] ^olut/olut<n><sg><nom>$
+[/mf1gampnMqXs]
+[nwVBspwJBuGi#0] ^mutta/mutta<cnjcoo>/mä<prn><pers><p1><sg><use_dialect><abe>$
+[/nwVBspwJBuGi]
+[oVCnzqL--Nn7#0] ^pitkä/pitkä<adj><pst><sg><nom>/pitkä<n><sg><nom>$
+[/oVCnzqL--Nn7]
+[omSuMu_k5Ofg#0] ^syö/syödä<vblex><actv><imp><p2><sg>/syödä<vblex><actv><pri><conneg>/syödä<vblex><actv><pri><p3><sg>$
+[/omSuMu_k5Ofg]
+[pDh9khSVB4-3#0] ^sinä/se<det><sg><ess>/se<prn><dem><sg><ess>/sinä<prn><pers><p2><sg><nom>$
+[/pDh9khSVB4-3]
+[r2H2Udqdpx22#0] ^yksi/yksi<det><sg><nom>/yksi<num><card><sg><nom>/yksi<prn><qu><sg><nom>$
+[/r2H2Udqdpx22]
+[rZpn_vqEfeh3#0] ^se/se<det><sg><nom>/se<prn><dem><sg><nom>$
+[/rZpn_vqEfeh3]
+[s90HIW9eml0G#0] ^nämä/nämä<prn><dem><pl><nom>$
+[/s90HIW9eml0G]
+[sTJJfVOnyAGH#0] ^olen/olla<vaux><actv><pri><p1><sg>/olla<vblex><actv><pri><p1><sg>$
+[/sTJJfVOnyAGH]
+[tsMMhNmOIIZm#0] ^tulette/tulla<vblex><actv><pri><p2><pl>$
+[/tsMMhNmOIIZm]
 [uo2pyrmXMhAI#0] ^µs/µs<n><sg><nom>$
 [/uo2pyrmXMhAI]
 [vMnGi4AnDZpk#0] ^Østerdalen/Østerdalen<np><al><sg><nom>$
 [/vMnGi4AnDZpk]
 [w5_c1Pu1WDZQ#0] ^æ-ò/æ<n><cmp>+ò<n><sg><nom>$
 [/w5_c1Pu1WDZQ]
+[wFOkGqrAeEQA#0] ^nopeasti/nopeasti<adv>$
+[/wFOkGqrAeEQA]
+[y1jkYAvwFCy-#0] ^ne/ne<prn><dem><pl><nom>$
+[/y1jkYAvwFCy-]
+[y6aPsDOmbFJu#0] ^kissa/kissa<n><sg><nom>$
+[/y6aPsDOmbFJu]

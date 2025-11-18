@@ -3,3 +3,63 @@
 Østerdalen
 æ-ò
 α-dimetyylibentsyyli-isosyanaateistasipa
+# pronouns
+minä
+sinä
+hän
+me
+te
+he
+tämä
+tuo
+se
+nämä
+nuo
+ne
+# top verbs
+olen
+juot
+syö
+menemme
+tulette
+ostan
+myyt
+ottavat
+antavat
+ei
+emme
+# conjunctions
+ja
+tai
+mutta
+# top nouns
+talo
+kissa
+koira
+olut
+poro
+# top adjectives
+pitkä
+lyhyt
+iso
+pieni
+punainen
+sininen
+valkea
+musta
+hyvä
+huono
+# top numerals
+yksi
+kaksi
+kolme
+neljä
+ensimmäinen
+toinen
+kolmas
+neljäs
+# top adverbs
+hyvin
+huonosti
+nopeasti
+hitaasti
